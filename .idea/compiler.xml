@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-03" />
+        <module name="springboot-05" />
+        <module name="springboot-04" />
+        <module name="springboot-learn" />
+        <module name="springboot-02" />
+        <module name="springboot-01" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-01" options="-parameters" />
+      <module name="springboot-02" options="-parameters" />
+      <module name="springboot-03" options="-parameters" />
+      <module name="springboot-04" options="-parameters" />
+      <module name="springboot-05" options="-parameters" />
+      <module name="springboot-learn" options="" />
+    </option>
+  </component>
+</project>
