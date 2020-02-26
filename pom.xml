@@ -9,9 +9,19 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>springboot-01</module>
-        <module>springboot-02</module>
-        <module>springboot-03</module>
+        <module>springboot-json-01</module>
+        <module>springboot-slf4j-02</module>
+        <module>springboot-param-03</module>
+        <module>springboot-mvc-04</module>
+        <module>springboot-swagger-05</module>
+        <module>springboot-thymeleaf-06</module>
+        <module>springboot-exception-07</module>
+        <module>springboot-aop-08</module>
+        <module>springboot-mybatis-09</module>
+        <module>springboot-transaction-10</module>
+        <module>springboot-listener-11</module>
+        <module>springboot-interceptor-12</module>
+        <module>springboot-redis-13</module>
     </modules>
 
 </project>

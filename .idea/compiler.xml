@@ -6,23 +6,39 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-03" />
-        <module name="springboot-05" />
-        <module name="springboot-04" />
+        <module name="springboot-thymeleaf-06" />
+        <module name="springboot-slf4j-02" />
+        <module name="springboot-redis-13" />
+        <module name="springboot-transaction-10" />
+        <module name="springboot-swagger-05" />
+        <module name="springboot-exception-07" />
+        <module name="springboot-mybatis-09" />
+        <module name="springboot-mvc-04" />
+        <module name="springboot-aop-08" />
+        <module name="springboot-listener-11" />
+        <module name="springboot-interceptor-12" />
+        <module name="springboot-json-01" />
         <module name="springboot-learn" />
-        <module name="springboot-02" />
-        <module name="springboot-01" />
+        <module name="springboot-param-03" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="springboot-01" options="-parameters" />
-      <module name="springboot-02" options="-parameters" />
-      <module name="springboot-03" options="-parameters" />
-      <module name="springboot-04" options="-parameters" />
-      <module name="springboot-05" options="-parameters" />
+      <module name="springboot-aop-08" options="-parameters" />
+      <module name="springboot-exception-07" options="-parameters" />
+      <module name="springboot-interceptor-12" options="-parameters" />
+      <module name="springboot-json-01" options="-parameters" />
       <module name="springboot-learn" options="" />
+      <module name="springboot-listener-11" options="-parameters" />
+      <module name="springboot-mvc-04" options="-parameters" />
+      <module name="springboot-mybatis-09" options="-parameters" />
+      <module name="springboot-param-03" options="-parameters" />
+      <module name="springboot-redis-13" options="-parameters" />
+      <module name="springboot-slf4j-02" options="-parameters" />
+      <module name="springboot-swagger-05" options="-parameters" />
+      <module name="springboot-thymeleaf-06" options="-parameters" />
+      <module name="springboot-transaction-10" options="-parameters" />
     </option>
   </component>
 </project>
