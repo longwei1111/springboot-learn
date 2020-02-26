@@ -8,48 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-01/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-json-01/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-json-01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-01/src/main/java/com/coody/springboot01/Springboot01Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-json-01/src/main/java/com/coody/springbootjson/SpringbootJsonApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-01/src/main/java/com/coody/springboot01/common/JsonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-json-01/src/main/java/com/coody/springbootjson/result/JsonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-01/src/main/java/com/coody/springboot01/config/FastjsonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-json-01/src/main/java/com/coody/springbootjson/config/FastjsonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-01/src/main/java/com/coody/springboot01/config/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-json-01/src/main/java/com/coody/springbootjson/config/JacksonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-01/src/main/java/com/coody/springboot01/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-json-01/src/main/java/com/coody/springbootjson/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-01/src/main/java/com/coody/springboot01/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-json-01/src/main/java/com/coody/springbootjson/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-01/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-json-01/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-01/src/test/java/com/coody/springboot01/Springboot01ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-json-01/src/test/java/com/coody/springbootjson/Springboot01ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-02/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mvc-04/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-slf4j-02/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-02/src/main/java/com/coody/springboot02/Springboot02Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-slf4j-02/src/main/java/com/coody/springbootslf4j/SpringbootSlf4jApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-02/src/main/java/com/coody/springboot02/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-slf4j-02/src/main/java/com/coody/springbootslf4j/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-02/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mvc-04/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-02/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-slf4j-02/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-02/src/test/java/com/coody/springboot02/Springboot02ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-slf4j-02/src/test/java/com/coody/springbootslf4j/Springboot02ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-03/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-param-03/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-param-03/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-03/src/main/java/com/coody/springboot03/Springboot03Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-param-03/src/main/java/com/coody/springbootparam/SpringbootParamApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-03/src/main/java/com/coody/springboot03/controller/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-param-03/src/main/java/com/coody/springbootparam/controller/ConfigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-03/src/main/java/com/coody/springboot03/service/MicroUrlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-param-03/src/main/java/com/coody/springbootparam/service/MicroUrlService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-03/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-param-03/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-03/src/main/resources/application-pro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-param-03/src/main/resources/application-pro.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-03/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-param-03/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-03/src/test/java/com/coody/springboot03/Springboot03ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-param-03/src/test/java/com/coody/springbootparam/Springboot03ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-04/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-slf4j-02/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-04/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mvc-04/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-04/src/main/java/com/coody/springboot04/Springboot04Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mvc-04/src/main/java/com/coody/springbootmvc/SpringbootMvcApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-04/src/main/java/com/coody/springboot04/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mvc-04/src/main/java/com/coody/springbootmvc/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-04/src/main/java/com/coody/springboot04/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mvc-04/src/main/java/com/coody/springbootmvc/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-04/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-slf4j-02/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-04/src/test/java/com/coody/springboot04/Springboot04ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mvc-04/src/test/java/com/coody/springbootmvc/Springboot04ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-05/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-swagger-05/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-05/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-swagger-05/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-05/src/main/java/com/coody/springboot05/Springboot05Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-swagger-05/src/main/java/com/coody/springbootswagger/SpringbootSwaggerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-05/src/main/java/com/coody/springboot05/common/JsonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-swagger-05/src/main/java/com/coody/springbootswagger/common/JsonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-05/src/main/java/com/coody/springboot05/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-swagger-05/src/main/java/com/coody/springbootswagger/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-05/src/main/java/com/coody/springboot05/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-swagger-05/src/main/java/com/coody/springbootswagger/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-05/src/main/java/com/coody/springboot05/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-swagger-05/src/main/java/com/coody/springbootswagger/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-05/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-swagger-05/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-05/src/test/java/com/coody/springboot05/Springboot05ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-swagger-05/src/test/java/com/coody/springbootswagger/Springboot05ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-redis-13/src/main/java/com/coody/springbootredis/controller/RedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-redis-13/src/main/java/com/coody/springbootredis/controller/RedisController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +32,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@github.com:longwei1111/springboot-learn.git" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -109,7 +75,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot-exception-07/src/main/java/com/coody/springbootexception" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot-rabbitmq-14/src/main/java/com/coody/springbootrabbitmq/provider" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -122,91 +88,44 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\lw\my_project\springboot-learn\springboot-rabbitmq-14\src\main\java\com\coody\springbootrabbitmq\provider" />
+      <recent name="D:\lw\my_project\springboot-learn\springboot-rabbitmq-14\src\main\java\com\coody\springbootrabbitmq\consumer" />
+      <recent name="D:\lw\my_project\springboot-learn\springboot-exception-07\src\main\java\com\coody\springbootexception" />
+      <recent name="D:\lw\my_project\springboot-learn\springboot-12\src\main\resources" />
+      <recent name="D:\lw\my_project\springboot-learn\springboot-10\src\main\java\com\coody\springboot10" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.coody.springbootrabbitmq.consumer.fanout" />
+      <recent name="com.coody.springbootrabbitmq.controller" />
+      <recent name="com.coody.springbootrabbitmq.consumer.topic" />
+      <recent name="com.coody.springbootexception.result" />
+      <recent name="com.coody.springboot11.entity" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\lw\my_project\springboot-learn\springboot-12\src\main\resources\templates" />
       <recent name="D:\lw\my_project\springboot-learn\springboot-06\src\main\resources\templates\user" />
       <recent name="D:\lw\my_project\springboot-learn\springboot-06\src\main\resources\templates" />
       <recent name="D:\lw\my_project\springboot-learn\springboot-06\src\main\resources\templates\error" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.coody.springbootexception.result" />
-      <recent name="com.coody.springboot11.entity" />
-      <recent name="com.coody.springboot05.common" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\lw\my_project\springboot-learn\springboot-exception-07\src\main\java\com\coody\springbootexception" />
-      <recent name="D:\lw\my_project\springboot-learn\springboot-12\src\main\resources" />
-      <recent name="D:\lw\my_project\springboot-learn\springboot-10\src\main\java\com\coody\springboot10" />
-      <recent name="D:\lw\my_project\springboot-learn\springboot-06\src\main\resources\templates" />
-      <recent name="F:\idea_project\springboot-learn\springboot-05\src\main\java\com\coody\springboot05\config" />
-    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootExceptionApplication">
-    <configuration name="Springboot08Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springboot-aop-08" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springbootaop.SpringbootAopApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Springboot09Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springboot-mybatis-09" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springboot09.Springboot09Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Springboot10Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springboot-transaction-10" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springboottransaction.SpringbootTransactionApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Springboot11Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springboot-listener-11" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springbootlistener.SpringbootListenerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Springboot13Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springboot-redis-13" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springboot13.Springboot13Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootExceptionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot-exception-07" />
+  <component name="RunManager">
+    <configuration name="SpringbootRabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-rabbitmq-14" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.coody.springbootexception.*" />
+          <option name="PATTERN" value="com.coody.springbootrabbitmq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springbootexception.SpringbootExceptionApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootInterceptorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springboot-interceptor-12" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springbootinterceptor.SpringbootInterceptorApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootParamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springboot-param-03" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springbootparam.SpringbootParamApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springbootrabbitmq.SpringbootRabbitmqApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringbootExceptionApplication" />
+        <item itemvalue="Spring Boot.SpringbootRabbitmqApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -254,12 +173,68 @@
       <workItem from="1582684467168" duration="326000" />
       <workItem from="1582684809460" duration="540000" />
       <workItem from="1582685396547" duration="504000" />
-      <workItem from="1582685917138" duration="121000" />
+      <workItem from="1582685917138" duration="1029000" />
+      <workItem from="1582689098072" duration="17480000" />
     </task>
+    <task id="LOCAL-00001" summary="Spring Boot code update">
+      <created>1582686118860</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582686118860</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Spring Boot code update">
+      <created>1582686325030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582686325030</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Spring Boot code update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Boot code update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="442" y="140" key="#Auto_Import" timestamp="1582601493065">
@@ -271,82 +246,86 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1582536815412" />
-    <state x="223" y="68" width="1164" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582682635660">
+    <state x="223" y="68" width="1164" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582698519563">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" width="1164" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582682635660" />
-    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser" timestamp="1582682988197">
+    <state x="223" y="68" width="1164" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582698519563" />
+    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser" timestamp="1582706593431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582682988197" />
+    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582706593431" />
     <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582365441071" />
-    <state x="490" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582685491682">
+    <state x="490" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582690307011">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="490" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1582685491682" />
+    <state x="490" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1582690307011" />
+    <state x="263" y="5" key="CommitChangelistDialog2" timestamp="1582686312935">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="263" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582686312935" />
     <state x="648" y="223" key="FileChooserDialogImpl" timestamp="1582525864449">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="648" y="223" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582525864449" />
-    <state width="1493" height="251" key="GridCell.Tab.0.bottom" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.0.bottom" timestamp="1582711492012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
     <state width="1876" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="251" key="GridCell.Tab.0.center" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.0.center" timestamp="1582711492012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
     <state width="1876" height="291" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="251" key="GridCell.Tab.0.left" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.0.left" timestamp="1582711492012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
     <state width="1876" height="291" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="251" key="GridCell.Tab.0.right" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.0.right" timestamp="1582711492012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
     <state width="1876" height="291" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="251" key="GridCell.Tab.1.bottom" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.1.bottom" timestamp="1582711492013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582711492013" />
     <state width="1876" height="291" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="251" key="GridCell.Tab.1.center" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.1.center" timestamp="1582711492012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
     <state width="1876" height="291" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="251" key="GridCell.Tab.1.left" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.1.left" timestamp="1582711492012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
     <state width="1876" height="291" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="251" key="GridCell.Tab.1.right" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.1.right" timestamp="1582711492012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
     <state width="1876" height="291" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="251" key="GridCell.Tab.2.bottom" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.2.bottom" timestamp="1582711492013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582711492013" />
     <state width="1876" height="337" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582375082255" />
-    <state width="1493" height="251" key="GridCell.Tab.2.center" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.2.center" timestamp="1582711492013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582711492013" />
     <state width="1876" height="337" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582375082255" />
-    <state width="1493" height="251" key="GridCell.Tab.2.left" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.2.left" timestamp="1582711492013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582711492013" />
     <state width="1876" height="337" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582375082254" />
-    <state width="1493" height="251" key="GridCell.Tab.2.right" timestamp="1582683190375">
+    <state width="1493" height="126" key="GridCell.Tab.2.right" timestamp="1582711492013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582683190375" />
+    <state width="1493" height="126" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582711492013" />
     <state width="1876" height="337" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582375082255" />
     <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1582362838220">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -361,27 +340,31 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="250" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1582365572269" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582686326726">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582686326726" />
     <state x="510" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1582631656854">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="510" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1582631656854" />
-    <state x="447" y="145" width="650" height="534" key="find.popup" timestamp="1582678887299">
+    <state x="447" y="145" width="680" height="534" key="find.popup" timestamp="1582707695569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="145" width="650" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1582678887299" />
-    <state x="269" y="105" key="new project wizard" timestamp="1582635064063">
+    <state x="447" y="145" width="680" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1582707695569" />
+    <state x="280" y="131" key="new project wizard" timestamp="1582690229570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="269" y="105" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1582635064063" />
+    <state x="280" y="131" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1582690229570" />
     <state x="330" y="213" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1582371647985" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1582538119372">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1582699405165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582538119372" />
-    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup" timestamp="1582684244203">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582699405165" />
+    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup" timestamp="1582708095303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582684244203" />
+    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582708095303" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582373199589" />
   </component>
   <component name="XDebuggerManager">

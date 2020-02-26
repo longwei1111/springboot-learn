@@ -42,8 +42,8 @@ public class RedisController {
     @GetMapping("/testHash")
     public void testHash() {
         // 测试redis的Hash类型
-        redisService.setHash("coody", "上海", "26");
-        log.info("age={}", redisService.getHash("coody", "上海"));
+        redisService.setHash("coody", "上海", "zhangsan");
+        log.info("name={}", redisService.getHash("coody", "上海"));
     }
 
     @GetMapping("/testList")

@@ -22,6 +22,7 @@
         <module>springboot-listener-11</module>
         <module>springboot-interceptor-12</module>
         <module>springboot-redis-13</module>
+        <module>springboot-rabbitmq-14</module>
     </modules>
 
 </project>
