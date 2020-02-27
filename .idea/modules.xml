@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot-aop/springboot-aop.iml" filepath="$PROJECT_DIR$/springboot-aop/springboot-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-exception/springboot-exception.iml" filepath="$PROJECT_DIR$/springboot-exception/springboot-exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-interceptor/springboot-interceptor.iml" filepath="$PROJECT_DIR$/springboot-interceptor/springboot-interceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-json/springboot-json.iml" filepath="$PROJECT_DIR$/springboot-json/springboot-json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-learn.iml" filepath="$PROJECT_DIR$/springboot-learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-listener/springboot-listener.iml" filepath="$PROJECT_DIR$/springboot-listener/springboot-listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/springboot-mongodb.iml" filepath="$PROJECT_DIR$/springboot-mongodb/springboot-mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mvc/springboot-mvc.iml" filepath="$PROJECT_DIR$/springboot-mvc/springboot-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" filepath="$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-param/springboot-param.iml" filepath="$PROJECT_DIR$/springboot-param/springboot-param.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq/springboot-rabbitmq.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq/springboot-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-slf4j/springboot-slf4j.iml" filepath="$PROJECT_DIR$/springboot-slf4j/springboot-slf4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-swagger/springboot-swagger.iml" filepath="$PROJECT_DIR$/springboot-swagger/springboot-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-task/springboot-task.iml" filepath="$PROJECT_DIR$/springboot-task/springboot-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-thymeleaf/springboot-thymeleaf.iml" filepath="$PROJECT_DIR$/springboot-thymeleaf/springboot-thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-transaction/springboot-transaction.iml" filepath="$PROJECT_DIR$/springboot-transaction/springboot-transaction.iml" />
+    </modules>
+  </component>
+</project>
