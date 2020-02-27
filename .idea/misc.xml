@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/springboot-13/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-rabbitmq-14/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mongodb-15/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-task/pom.xml" />
       </list>
     </option>
   </component>

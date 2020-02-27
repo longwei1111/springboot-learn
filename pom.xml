@@ -9,21 +9,22 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>springboot-json-01</module>
-        <module>springboot-slf4j-02</module>
-        <module>springboot-param-03</module>
-        <module>springboot-mvc-04</module>
-        <module>springboot-swagger-05</module>
-        <module>springboot-thymeleaf-06</module>
-        <module>springboot-exception-07</module>
-        <module>springboot-aop-08</module>
-        <module>springboot-mybatis-09</module>
-        <module>springboot-transaction-10</module>
-        <module>springboot-listener-11</module>
-        <module>springboot-interceptor-12</module>
-        <module>springboot-redis-13</module>
-        <module>springboot-rabbitmq-14</module>
-        <module>springboot-mongodb-15</module>
+        <module>springboot-json</module>
+        <module>springboot-slf4j</module>
+        <module>springboot-param</module>
+        <module>springboot-mvc</module>
+        <module>springboot-swagger</module>
+        <module>springboot-thymeleaf</module>
+        <module>springboot-exception</module>
+        <module>springboot-aop</module>
+        <module>springboot-mybatis</module>
+        <module>springboot-transaction</module>
+        <module>springboot-listener</module>
+        <module>springboot-interceptor</module>
+        <module>springboot-redis</module>
+        <module>springboot-rabbitmq</module>
+        <module>springboot-mongodb</module>
+        <module>springboot-task</module>
     </modules>
 
 </project>

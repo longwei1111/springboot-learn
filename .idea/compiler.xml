@@ -6,43 +6,45 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-thymeleaf-06" />
-        <module name="springboot-slf4j-02" />
-        <module name="springboot-redis-13" />
-        <module name="springboot-transaction-10" />
-        <module name="springboot-swagger-05" />
-        <module name="springboot-exception-07" />
+        <module name="springboot-interceptor" />
+        <module name="springboot-mvc" />
+        <module name="springboot-aop" />
+        <module name="springboot-slf4j" />
+        <module name="springboot-task" />
+        <module name="springboot-mongodb" />
         <module name="springboot-learn" />
-        <module name="springboot-mybatis-09" />
-        <module name="springboot-mvc-04" />
-        <module name="springboot-aop-08" />
-        <module name="springboot-listener-11" />
-        <module name="springboot-interceptor-12" />
-        <module name="springboot-json-01" />
-        <module name="springboot-param-03" />
-        <module name="springboot-rabbitmq-14" />
-        <module name="springboot-mongodb-15" />
+        <module name="springboot-thymeleaf" />
+        <module name="springboot-exception" />
+        <module name="springboot-listener" />
+        <module name="springboot-mybatis" />
+        <module name="springboot-param" />
+        <module name="springboot-redis" />
+        <module name="springboot-json" />
+        <module name="springboot-transaction" />
+        <module name="springboot-rabbitmq" />
+        <module name="springboot-swagger" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="springboot-aop-08" options="-parameters" />
-      <module name="springboot-exception-07" options="-parameters" />
-      <module name="springboot-interceptor-12" options="-parameters" />
-      <module name="springboot-json-01" options="-parameters" />
+      <module name="springboot-aop" options="-parameters" />
+      <module name="springboot-exception" options="-parameters" />
+      <module name="springboot-interceptor" options="-parameters" />
+      <module name="springboot-json" options="-parameters" />
       <module name="springboot-learn" options="" />
-      <module name="springboot-listener-11" options="-parameters" />
-      <module name="springboot-mongodb-15" options="-parameters" />
-      <module name="springboot-mvc-04" options="-parameters" />
-      <module name="springboot-mybatis-09" options="-parameters" />
-      <module name="springboot-param-03" options="-parameters" />
-      <module name="springboot-rabbitmq-14" options="-parameters" />
-      <module name="springboot-redis-13" options="-parameters" />
-      <module name="springboot-slf4j-02" options="-parameters" />
-      <module name="springboot-swagger-05" options="-parameters" />
-      <module name="springboot-thymeleaf-06" options="-parameters" />
-      <module name="springboot-transaction-10" options="-parameters" />
+      <module name="springboot-listener" options="-parameters" />
+      <module name="springboot-mongodb" options="-parameters" />
+      <module name="springboot-mvc" options="-parameters" />
+      <module name="springboot-mybatis" options="-parameters" />
+      <module name="springboot-param" options="-parameters" />
+      <module name="springboot-rabbitmq" options="-parameters" />
+      <module name="springboot-redis" options="-parameters" />
+      <module name="springboot-slf4j" options="-parameters" />
+      <module name="springboot-swagger" options="-parameters" />
+      <module name="springboot-task" options="-parameters" />
+      <module name="springboot-thymeleaf" options="-parameters" />
+      <module name="springboot-transaction" options="-parameters" />
     </option>
   </component>
 </project>
