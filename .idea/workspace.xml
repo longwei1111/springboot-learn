@@ -4,11 +4,9 @@
     <list default="true" id="98074fe5-d06d-4329-b953-95e0a32dda60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-redis-13/src/main/java/com/coody/springbootredis/controller/RedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-redis-13/src/main/java/com/coody/springbootredis/controller/RedisController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +86,19 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\lw\my_project\springboot-learn\springboot-12\src\main\resources\templates" />
+      <recent name="D:\lw\my_project\springboot-learn\springboot-06\src\main\resources\templates\user" />
+      <recent name="D:\lw\my_project\springboot-learn\springboot-06\src\main\resources\templates" />
+      <recent name="D:\lw\my_project\springboot-learn\springboot-06\src\main\resources\templates\error" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.coody.springbootmongodb.result" />
+      <recent name="com.coody.springbootrabbitmq.consumer.fanout" />
+      <recent name="com.coody.springbootrabbitmq.controller" />
+      <recent name="com.coody.springbootrabbitmq.consumer.topic" />
+      <recent name="com.coody.springbootexception.result" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\lw\my_project\springboot-learn\springboot-rabbitmq-14\src\main\java\com\coody\springbootrabbitmq\provider" />
       <recent name="D:\lw\my_project\springboot-learn\springboot-rabbitmq-14\src\main\java\com\coody\springbootrabbitmq\consumer" />
@@ -95,37 +106,24 @@
       <recent name="D:\lw\my_project\springboot-learn\springboot-12\src\main\resources" />
       <recent name="D:\lw\my_project\springboot-learn\springboot-10\src\main\java\com\coody\springboot10" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.coody.springbootrabbitmq.consumer.fanout" />
-      <recent name="com.coody.springbootrabbitmq.controller" />
-      <recent name="com.coody.springbootrabbitmq.consumer.topic" />
-      <recent name="com.coody.springbootexception.result" />
-      <recent name="com.coody.springboot11.entity" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\lw\my_project\springboot-learn\springboot-12\src\main\resources\templates" />
-      <recent name="D:\lw\my_project\springboot-learn\springboot-06\src\main\resources\templates\user" />
-      <recent name="D:\lw\my_project\springboot-learn\springboot-06\src\main\resources\templates" />
-      <recent name="D:\lw\my_project\springboot-learn\springboot-06\src\main\resources\templates\error" />
-    </key>
   </component>
   <component name="RunManager">
-    <configuration name="SpringbootRabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot-rabbitmq-14" />
+    <configuration name="SpringbootMongodbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-mongodb-15" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.coody.springbootrabbitmq.*" />
+          <option name="PATTERN" value="com.coody.springbootmongodb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springbootrabbitmq.SpringbootRabbitmqApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coody.springbootmongodb.SpringbootMongodbApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringbootRabbitmqApplication" />
+        <item itemvalue="Spring Boot.SpringbootMongodbApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +172,10 @@
       <workItem from="1582684809460" duration="540000" />
       <workItem from="1582685396547" duration="504000" />
       <workItem from="1582685917138" duration="1029000" />
-      <workItem from="1582689098072" duration="17480000" />
+      <workItem from="1582689098072" duration="17618000" />
+      <workItem from="1582730231423" duration="157000" />
+      <workItem from="1582762954895" duration="6626000" />
+      <workItem from="1582788216363" duration="5785000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Boot code update">
       <created>1582686118860</created>
@@ -190,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582686325030</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="springboot-rabbitmq">
+      <created>1582711596792</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582711596792</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +242,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring Boot code update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Boot code update" />
+    <MESSAGE value="springboot-rabbitmq" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot-rabbitmq" />
   </component>
   <component name="WindowStateProjectService">
     <state x="442" y="140" key="#Auto_Import" timestamp="1582601493065">
@@ -246,19 +255,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1582536815412" />
-    <state x="223" y="68" width="1164" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582698519563">
+    <state x="223" y="68" width="1164" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582791916390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="68" width="1164" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582698519563" />
-    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser" timestamp="1582706593431">
+    <state x="223" y="68" width="1164" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582791916390" />
+    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser" timestamp="1582791004828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582706593431" />
+    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582791004828" />
     <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582365441071" />
-    <state x="490" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582690307011">
+    <state x="490" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582792570083">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="490" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1582690307011" />
+    <state x="490" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1582792570083" />
     <state x="263" y="5" key="CommitChangelistDialog2" timestamp="1582686312935">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -267,78 +276,79 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="648" y="223" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582525864449" />
-    <state width="1493" height="126" key="GridCell.Tab.0.bottom" timestamp="1582711492012">
+    <state width="1493" height="243" key="GridCell.Tab.0.bottom" timestamp="1582793949236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
+    <state width="1493" height="243" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582793949236" />
     <state width="1876" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="126" key="GridCell.Tab.0.center" timestamp="1582711492012">
+    <state width="1493" height="243" key="GridCell.Tab.0.center" timestamp="1582793949235">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
+    <state width="1493" height="243" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582793949235" />
     <state width="1876" height="291" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="126" key="GridCell.Tab.0.left" timestamp="1582711492012">
+    <state width="1493" height="243" key="GridCell.Tab.0.left" timestamp="1582793949235">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
+    <state width="1493" height="243" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582793949235" />
     <state width="1876" height="291" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="126" key="GridCell.Tab.0.right" timestamp="1582711492012">
+    <state width="1493" height="243" key="GridCell.Tab.0.right" timestamp="1582793949235">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
+    <state width="1493" height="243" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582793949235" />
     <state width="1876" height="291" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="126" key="GridCell.Tab.1.bottom" timestamp="1582711492013">
+    <state width="1493" height="243" key="GridCell.Tab.1.bottom" timestamp="1582793949237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582711492013" />
+    <state width="1493" height="243" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582793949237" />
     <state width="1876" height="291" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="126" key="GridCell.Tab.1.center" timestamp="1582711492012">
+    <state width="1493" height="243" key="GridCell.Tab.1.center" timestamp="1582793949236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
+    <state width="1493" height="243" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582793949236" />
     <state width="1876" height="291" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="126" key="GridCell.Tab.1.left" timestamp="1582711492012">
+    <state width="1493" height="243" key="GridCell.Tab.1.left" timestamp="1582793949236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
+    <state width="1493" height="243" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582793949236" />
     <state width="1876" height="291" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="126" key="GridCell.Tab.1.right" timestamp="1582711492012">
+    <state width="1493" height="243" key="GridCell.Tab.1.right" timestamp="1582793949237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582711492012" />
+    <state width="1493" height="243" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582793949237" />
     <state width="1876" height="291" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582375083440" />
-    <state width="1493" height="126" key="GridCell.Tab.2.bottom" timestamp="1582711492013">
+    <state width="1493" height="243" key="GridCell.Tab.2.bottom" timestamp="1582793949237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582711492013" />
+    <state width="1493" height="243" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582793949237" />
     <state width="1876" height="337" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582375082255" />
-    <state width="1493" height="126" key="GridCell.Tab.2.center" timestamp="1582711492013">
+    <state width="1493" height="243" key="GridCell.Tab.2.center" timestamp="1582793949237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582711492013" />
+    <state width="1493" height="243" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1582793949237" />
     <state width="1876" height="337" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582375082255" />
-    <state width="1493" height="126" key="GridCell.Tab.2.left" timestamp="1582711492013">
+    <state width="1493" height="243" key="GridCell.Tab.2.left" timestamp="1582793949237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582711492013" />
+    <state width="1493" height="243" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1582793949237" />
     <state width="1876" height="337" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582375082254" />
-    <state width="1493" height="126" key="GridCell.Tab.2.right" timestamp="1582711492013">
+    <state width="1493" height="243" key="GridCell.Tab.2.right" timestamp="1582793949237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="126" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582711492013" />
+    <state width="1493" height="243" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1582793949237" />
     <state width="1876" height="337" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582375082255" />
     <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1582362838220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582362838220" />
-    <state x="369" y="0" key="SettingsEditor" timestamp="1582685894336">
+    <state x="369" y="0" key="SettingsEditor" timestamp="1582791682155">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="369" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582685894336" />
+    <state x="369" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582791682155" />
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582370396352" />
-    <state x="681" y="250" width="540" height="524" key="StructurePopup" timestamp="1582365572269">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="545" y="198" width="543" height="416" key="StructurePopup" timestamp="1582792425659">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="545" y="198" width="543" height="416" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1582792425659" />
     <state x="681" y="250" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1582365572269" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582686326726">
       <screen x="0" y="0" width="1536" height="824" />
@@ -352,19 +362,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="447" y="145" width="680" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1582707695569" />
-    <state x="280" y="131" key="new project wizard" timestamp="1582690229570">
+    <state x="280" y="131" key="new project wizard" timestamp="1582786209188">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="280" y="131" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1582690229570" />
+    <state x="280" y="131" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1582786209188" />
     <state x="330" y="213" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1582371647985" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1582699405165">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1582789047982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582699405165" />
-    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup" timestamp="1582708095303">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582789047982" />
+    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup" timestamp="1582790219218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582708095303" />
+    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582790219218" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582373199589" />
   </component>
   <component name="XDebuggerManager">

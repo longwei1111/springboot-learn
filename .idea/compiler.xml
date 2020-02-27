@@ -10,17 +10,18 @@
         <module name="springboot-slf4j-02" />
         <module name="springboot-redis-13" />
         <module name="springboot-transaction-10" />
-        <module name="springboot-interceptor-12" />
         <module name="springboot-swagger-05" />
+        <module name="springboot-exception-07" />
         <module name="springboot-learn" />
         <module name="springboot-mybatis-09" />
         <module name="springboot-mvc-04" />
         <module name="springboot-aop-08" />
         <module name="springboot-listener-11" />
-        <module name="springboot-param-03" />
+        <module name="springboot-interceptor-12" />
         <module name="springboot-json-01" />
+        <module name="springboot-param-03" />
         <module name="springboot-rabbitmq-14" />
-        <module name="springboot-exception-07" />
+        <module name="springboot-mongodb-15" />
       </profile>
     </annotationProcessing>
   </component>
@@ -32,6 +33,7 @@
       <module name="springboot-json-01" options="-parameters" />
       <module name="springboot-learn" options="" />
       <module name="springboot-listener-11" options="-parameters" />
+      <module name="springboot-mongodb-15" options="-parameters" />
       <module name="springboot-mvc-04" options="-parameters" />
       <module name="springboot-mybatis-09" options="-parameters" />
       <module name="springboot-param-03" options="-parameters" />
