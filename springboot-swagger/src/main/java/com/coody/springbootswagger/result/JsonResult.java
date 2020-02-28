@@ -1,4 +1,4 @@
-package com.coody.springbootswagger.common;
+package com.coody.springbootswagger.result;
 
 import lombok.Data;
 

@@ -16,7 +16,7 @@ import java.util.Map;
  * @Author lw
  * @Date 2020-02-22 17:27
  */
-@RestController
+@RestController // 等价 @Controller + @ResponseBody 返回Json格式数据
 @RequestMapping("/json")
 public class UserController {
 

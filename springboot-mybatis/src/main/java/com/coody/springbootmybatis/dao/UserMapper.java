@@ -1,6 +1,6 @@
-package com.coody.springboot09.dao;
+package com.coody.springbootmybatis.dao;
 
-import com.coody.springboot09.entity.User;
+import com.coody.springbootmybatis.entity.User;
 import org.apache.ibatis.annotations.*;
 
 /**

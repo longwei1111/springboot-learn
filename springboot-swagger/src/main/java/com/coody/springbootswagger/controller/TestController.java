@@ -1,6 +1,6 @@
 package com.coody.springbootswagger.controller;
 
-import com.coody.springbootswagger.common.JsonResult;
+import com.coody.springbootswagger.result.JsonResult;
 import com.coody.springbootswagger.entity.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

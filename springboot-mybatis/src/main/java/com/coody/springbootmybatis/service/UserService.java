@@ -1,6 +1,6 @@
-package com.coody.springboot09.service;
+package com.coody.springbootmybatis.service;
 
-import com.coody.springboot09.entity.User;
+import com.coody.springbootmybatis.entity.User;
 
 /**
  * @Classname UserService

@@ -1,8 +1,8 @@
-package com.coody.springboot09.service.impl;
+package com.coody.springbootmybatis.service.impl;
 
-import com.coody.springboot09.dao.UserMapper;
-import com.coody.springboot09.entity.User;
-import com.coody.springboot09.service.UserService;
+import com.coody.springbootmybatis.dao.UserMapper;
+import com.coody.springbootmybatis.entity.User;
+import com.coody.springbootmybatis.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

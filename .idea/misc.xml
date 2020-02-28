@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-log4j2/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-druid/pom.xml" />
       </list>
     </option>
   </component>

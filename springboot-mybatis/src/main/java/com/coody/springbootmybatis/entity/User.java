@@ -1,4 +1,4 @@
-package com.coody.springboot09.entity;
+package com.coody.springbootmybatis.entity;
 
 import lombok.Data;
 

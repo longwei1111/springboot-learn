@@ -1,4 +1,4 @@
-package com.coody.springboot09;
+package com.coody.springbootmybatis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,7 +1,7 @@
-package com.coody.springboot09.controller;
+package com.coody.springbootmybatis.controller;
 
-import com.coody.springboot09.entity.User;
-import com.coody.springboot09.service.UserService;
+import com.coody.springbootmybatis.entity.User;
+import com.coody.springbootmybatis.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
