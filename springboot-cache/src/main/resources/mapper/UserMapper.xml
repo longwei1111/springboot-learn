@@ -10,4 +10,16 @@
     <select id="queryUserById" parameterType="INTEGER" resultMap="BaseResultMap">
         select id, user_name, pass_word from user where id = #{id}
     </select>
+
+    <update id="updateUserById" parameterType="user">
+        update user set user_name = #{username}, pass_word = #{password} where id = #{id}
+    </update>
+
+    <delete id="deleteUserById" parameterType="INTEGER">
+       delete from user where id = #{id}
+    </delete>
+
+    <select id="queryUserByName" parameterType="STRING" resultMap="BaseResultMap">
+        select id, user_name, pass_word from user where user_name = #{username}
+    </select>
 </mapper>

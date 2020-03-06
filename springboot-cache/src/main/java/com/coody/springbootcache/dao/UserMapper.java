@@ -10,5 +10,11 @@ import com.coody.springbootcache.entity.User;
  */
 public interface UserMapper {
 
-    User queryUserById(int id);
+    User queryUserById(Integer id);
+
+    Integer updateUserById(User user);
+
+    Integer deleteUserById(Integer id);
+
+    User queryUserByName(String username);
 }
