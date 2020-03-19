@@ -2,30 +2,30 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-interceptor" />
-        <module name="springboot-mvc" />
-        <module name="springboot-swagger" />
         <module name="springboot-cache" />
+        <module name="springboot-mvc" />
         <module name="springboot-aop" />
+        <module name="springboot-listener" />
         <module name="springboot-slf4j" />
-        <module name="springboot-json" />
         <module name="springboot-rabbitmq" />
         <module name="springboot-mongodb" />
-        <module name="springboot-learn" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-exception" />
         <module name="springboot-log4j2" />
-        <module name="springboot-listener" />
+        <module name="springboot-interceptor" />
+        <module name="springboot-mybatis" />
+        <module name="springboot-task" />
         <module name="springboot-param" />
         <module name="springboot-redis" />
-        <module name="springboot-mybatis" />
+        <module name="springboot-json" />
         <module name="springboot-transaction" />
         <module name="springboot-druid" />
-        <module name="springboot-task" />
+        <module name="springboot-swagger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

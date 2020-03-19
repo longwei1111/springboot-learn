@@ -10,9 +10,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.coody</groupId>
+    <groupId>com.runlw</groupId>
     <artifactId>springboot-transaction</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>springboot-transaction</name>
