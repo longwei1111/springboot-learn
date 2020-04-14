@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.coody.springboot10.dao")
+@MapperScan("com.coody.springboot.transaction.dao")
 public class SpringbootTransactionApplication {
 
     public static void main(String[] args) {

@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ImportResource;
 
 @ImportResource(locations = {"classpath:druid-bean.xml"})
-@MapperScan("com.coody.springbootdruid.dao")
+@MapperScan("com.coody.springboot.druid.dao")
 @ServletComponentScan
 @SpringBootApplication
 public class SpringbootDruidApplication {
