@@ -4,6 +4,7 @@ import com.coody.springboot.cache.dao.UserMapper;
 import com.coody.springboot.cache.entity.User;
 import com.coody.springboot.cache.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;

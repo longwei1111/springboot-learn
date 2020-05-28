@@ -42,7 +42,7 @@ public class LogAspectHandler {
      * 第二个 * 号的位置：表示类名，* 表示所有类
      * *(..) ：这个星号表示方法名，* 表示所有的方法，后面括弧里面表示方法的参数，两个句点表示任何参数
      */
-    @Pointcut("execution(* com.coody.springbootaop.controller..*.*(..))")
+    @Pointcut("execution(* com.coody.springboot.aop.controller..*.*(..))")
     public void pointcut() {
     }
 
