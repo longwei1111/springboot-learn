@@ -17,7 +17,7 @@ import java.net.URLEncoder;
 
 /**
  * @Classname UserController
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-25 14:47
  */
@@ -28,7 +28,7 @@ public class UserController {
     private static final Logger log = LoggerFactory.getLogger(UserController.class);
 
     @Resource
-    UserService userService;
+    private UserService userService;
 
     @GetMapping("/getUser")
     public User getUser(HttpServletRequest request) {

@@ -25,7 +25,7 @@ public enum BusinessMsgEnum {
      */
     private String msg;
 
-    private BusinessMsgEnum(String code, String msg) {
+    BusinessMsgEnum(String code, String msg) {
         this.code = code;
         this.msg = msg;
     }

@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 
 /**
  * @Classname UserController
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-03-05 16:31
  */
@@ -19,7 +19,7 @@ import javax.annotation.Resource;
 public class UserController {
 
     @Resource
-    UserService userService;
+    private UserService userService;
 
     @GetMapping("/query/{id}")
     public String queryUserById(@PathVariable Integer id) {
@@ -42,5 +42,4 @@ public class UserController {
     public User queryUserByName(@PathVariable String username) {
         return userService.queryUserByName(username);
     }
-
 }

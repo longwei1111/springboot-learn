@@ -19,7 +19,7 @@ import java.util.List;
 public class StudentController {
 
     @Resource
-    StudentService studentService;
+    private StudentService studentService;
 
     /**
      * 新增学生信息

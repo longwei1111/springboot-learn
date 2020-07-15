@@ -22,7 +22,7 @@ import java.util.UUID;
 public class FanoutProvider {
 
     @Resource
-    RabbitTemplate rabbitTemplate;
+    private RabbitTemplate rabbitTemplate;
 
     public void sendFanoutMessage() {
         String messageId = String.valueOf(UUID.randomUUID());

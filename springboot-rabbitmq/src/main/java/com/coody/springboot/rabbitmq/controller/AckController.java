@@ -31,7 +31,7 @@ public class AckController {
      */
 
     @Resource
-    RabbitTemplate rabbitTemplate;
+    private RabbitTemplate rabbitTemplate;
 
     /**
      * 1.消息推送到server，但是在server里找不到交换机

@@ -14,7 +14,7 @@ import java.util.List;
 public class UserController {
 
     @Resource
-    UserMapper userMapper;
+    private UserMapper userMapper;
 
     @GetMapping(value = "/get")
     public User get() {
@@ -25,5 +25,4 @@ public class UserController {
     public List<User> list() {
         return userMapper.getList();
     }
-
 }

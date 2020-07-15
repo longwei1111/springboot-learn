@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * @Classname User
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-27 14:54
  */

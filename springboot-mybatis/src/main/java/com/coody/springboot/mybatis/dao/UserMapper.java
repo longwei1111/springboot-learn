@@ -5,9 +5,9 @@ import org.apache.ibatis.annotations.*;
 
 /**
  * @Classname UserMapper
- * @Description TODO
+ * @Description
  * @Author lw
- * @Date 2020-02-25 11:28
+ * @Date 2020-03-05 15:51
  */
 public interface UserMapper {
 

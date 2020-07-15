@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 public class AsyncController {
 
     @Resource
-    AsyncTask asyncTask;
+    private AsyncTask asyncTask;
 
     @GetMapping("/task")
     public String asyncTask() {

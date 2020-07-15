@@ -22,7 +22,7 @@ import java.util.UUID;
 public class TopicProvider {
 
     @Resource
-    RabbitTemplate rabbitTemplate;
+    private RabbitTemplate rabbitTemplate;
 
     public void sendTopicMessage() {
         String messageId = String.valueOf(UUID.randomUUID());

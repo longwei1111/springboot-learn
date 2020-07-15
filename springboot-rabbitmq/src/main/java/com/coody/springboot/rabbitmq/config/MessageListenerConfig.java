@@ -26,7 +26,7 @@ public class MessageListenerConfig {
     private DirectReceiver directReceiver;
 
     @Resource
-    DirectRabbitConfig directRabbitConfig;
+    private DirectRabbitConfig directRabbitConfig;
 
     @Bean
     public SimpleMessageListenerContainer simpleMessageListenerContainer() {

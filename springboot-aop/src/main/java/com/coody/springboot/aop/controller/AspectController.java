@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Classname AspectController
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-24 17:44
  */
@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/aop")
 public class AspectController {
 
-    @GetMapping("/getMapping")
-    public String testGetMapping() {
-        log.info("===== testGetMapping =====");
+    @GetMapping("/test")
+    public String test() {
+        log.info("===== /aop/test =====");
         return "success";
     }
 

@@ -74,9 +74,7 @@ public class LogAspectHandler {
         // 获取请求的url和ip
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
-        // 请求url
         String url = request.getRequestURI();
-        // ip
         String ip = request.getRemoteAddr();
         log.info("用户请求的url={},ip={}", url, ip);
     }

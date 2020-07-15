@@ -3,8 +3,7 @@ package com.coody.springboot.redis.controller;
 import com.alibaba.fastjson.JSON;
 import com.coody.springboot.redis.entity.User;
 import com.coody.springboot.redis.service.RedisService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,11 +17,10 @@ import java.util.List;
  * @Author lw
  * @Date 2020-02-25 21:01
  */
+@Slf4j
 @RestController
 @RequestMapping("/redis")
 public class RedisController {
-
-    private static final Logger log = LoggerFactory.getLogger(RedisService.class);
 
     @Resource
     private RedisService redisService;

@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 /**
  * @Classname ConfigController
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-22 18:51
  */
@@ -20,9 +20,8 @@ import javax.annotation.Resource;
 public class ConfigController {
 
     @Resource
-    MicroUrlService microUrlService;
+    private MicroUrlService microUrlService;
 
-    // 单个注入属性值
     @Value("${url.orderUrl}")
     private String orderUrl;
 

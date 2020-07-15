@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 public class SendTopicMsgController {
 
     @Resource
-    TopicProvider topicProvider;
+    private TopicProvider topicProvider;
 
     @GetMapping("/send")
     public String sendTopicMessage(){

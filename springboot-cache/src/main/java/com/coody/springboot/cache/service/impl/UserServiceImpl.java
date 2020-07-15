@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 
 /**
  * @Classname UserServiceImpl
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-03-05 15:51
  */
@@ -35,7 +35,7 @@ public class UserServiceImpl implements UserService {
     */
 
     @Resource
-    UserMapper userMapper;
+    private UserMapper userMapper;
 
     /**
      * "@Cacheable"：将方法的结果进行缓存，以后在需要数据时，直接在缓存中获取，不会再调用方法
@@ -73,8 +73,6 @@ public class UserServiceImpl implements UserService {
         return userMapper.updateUserById(user);
     }
 
-
-
     /**
      * "@CacheEvict"：清除缓存中的数据
      *      key：指定要清除的数据
@@ -95,9 +93,8 @@ public class UserServiceImpl implements UserService {
      * 根据username查询的结果会放到缓存中，同时也会以id，email为key来缓存数据的。
      * 在使用username查询时，方法还是会执行，因为使用@CachePut注解，这个注解要求目标方法一定要执行的
      *
-     *
      * @param username
-     * @return
+     * @return User
      */
     @Override
     @Caching(

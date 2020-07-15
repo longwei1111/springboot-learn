@@ -4,9 +4,9 @@ import com.coody.springboot.mybatis.entity.User;
 
 /**
  * @Classname UserService
- * @Description TODO
+ * @Description
  * @Author lw
- * @Date 2020-02-25 11:36
+ * @Date 2020-03-05 15:51
  */
 public interface UserService {
 

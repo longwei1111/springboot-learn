@@ -24,7 +24,7 @@ import java.util.List;
 public class UserController {
 
     @Resource
-    MongoTemplate mongoTemplate;
+    private MongoTemplate mongoTemplate;
 
     /**
      * 新增用户信息

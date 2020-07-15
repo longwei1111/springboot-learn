@@ -20,7 +20,7 @@ import javax.annotation.Resource;
 public class UserController {
 
     @Resource
-    UserService userService;
+    private UserService userService;
 
     @PostMapping("/insert")
     public Integer insertUser(@RequestBody User user) {

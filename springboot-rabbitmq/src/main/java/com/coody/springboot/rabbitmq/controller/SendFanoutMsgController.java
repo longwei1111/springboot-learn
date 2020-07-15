@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 public class SendFanoutMsgController {
 
     @Resource
-    FanoutProvider fanoutProvider;
+    private FanoutProvider fanoutProvider;
 
     @GetMapping("/send")
     public String sendFanoutMessage(){

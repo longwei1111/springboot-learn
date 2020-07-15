@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 public class SendDirectMsgController {
 
     @Resource
-    DirectProvider directProvider;
+    private DirectProvider directProvider;
 
     @GetMapping("/send")
     public String sendDirectMessage() {

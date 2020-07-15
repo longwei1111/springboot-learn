@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * @Classname User
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-03-05 15:50
  */

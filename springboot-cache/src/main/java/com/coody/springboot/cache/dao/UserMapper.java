@@ -3,10 +3,10 @@ package com.coody.springboot.cache.dao;
 import com.coody.springboot.cache.entity.User;
 
 /**
- * @Classname UserDao
- * @Description TODO
+ * @Classname UserMapper
+ * @Description
  * @Author lw
- * @Date 2020-03-05 16:28
+ * @Date 2020-03-05 15:51
  */
 public interface UserMapper {
 

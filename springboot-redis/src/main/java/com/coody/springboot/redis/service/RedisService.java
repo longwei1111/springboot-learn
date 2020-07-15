@@ -19,7 +19,7 @@ import java.util.List;
 public class RedisService {
 
     @Resource
-    StringRedisTemplate stringRedisTemplate;
+    private StringRedisTemplate stringRedisTemplate;
 
     /**  redis:String 类型========================================start */
     /**

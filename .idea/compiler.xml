@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-cache" />
         <module name="springboot-mvc" />
+        <module name="springboot-swagger" />
         <module name="springboot-aop" />
         <module name="springboot-listener" />
         <module name="springboot-slf4j" />
@@ -19,16 +20,16 @@
         <module name="springboot-log4j2" />
         <module name="springboot-interceptor" />
         <module name="springboot-mybatis" />
-        <module name="springboot-task" />
         <module name="springboot-param" />
         <module name="springboot-redis" />
         <module name="springboot-json" />
         <module name="springboot-transaction" />
         <module name="springboot-druid" />
-        <module name="springboot-swagger" />
+        <module name="springboot-task" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
       <module name="springboot-aop" target="1.8" />
       <module name="springboot-cache" target="1.8" />
       <module name="springboot-druid" target="1.8" />
@@ -53,25 +54,25 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="springboot-aop" options="-parameters" />
-      <module name="springboot-cache" options="-parameters" />
-      <module name="springboot-druid" options="-parameters" />
-      <module name="springboot-exception" options="-parameters" />
-      <module name="springboot-interceptor" options="-parameters" />
-      <module name="springboot-json" options="-parameters" />
-      <module name="springboot-listener" options="-parameters" />
-      <module name="springboot-log4j2" options="-parameters" />
-      <module name="springboot-mongodb" options="-parameters" />
-      <module name="springboot-mvc" options="-parameters" />
-      <module name="springboot-mybatis" options="-parameters" />
-      <module name="springboot-param" options="-parameters" />
-      <module name="springboot-rabbitmq" options="-parameters" />
-      <module name="springboot-redis" options="-parameters" />
-      <module name="springboot-slf4j" options="-parameters" />
-      <module name="springboot-swagger" options="-parameters" />
-      <module name="springboot-task" options="-parameters" />
-      <module name="springboot-thymeleaf" options="-parameters" />
-      <module name="springboot-transaction" options="-parameters" />
+      <module name="springboot-aop" options="" />
+      <module name="springboot-cache" options="" />
+      <module name="springboot-druid" options="" />
+      <module name="springboot-exception" options="" />
+      <module name="springboot-interceptor" options="" />
+      <module name="springboot-json" options="" />
+      <module name="springboot-listener" options="" />
+      <module name="springboot-log4j2" options="" />
+      <module name="springboot-mongodb" options="" />
+      <module name="springboot-mvc" options="" />
+      <module name="springboot-mybatis" options="" />
+      <module name="springboot-param" options="" />
+      <module name="springboot-rabbitmq" options="" />
+      <module name="springboot-redis" options="" />
+      <module name="springboot-slf4j" options="" />
+      <module name="springboot-swagger" options="" />
+      <module name="springboot-task" options="" />
+      <module name="springboot-thymeleaf" options="" />
+      <module name="springboot-transaction" options="" />
     </option>
   </component>
 </project>

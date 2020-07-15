@@ -18,7 +18,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class AsyncTaskPoolConfig implements AsyncConfigurer {
 
 //    @Resource
-//    Environment environment;
+//    private Environment environment;
 
     @Value("${spring.task.execution.pool.core-size}")
     private int corePoolSize;

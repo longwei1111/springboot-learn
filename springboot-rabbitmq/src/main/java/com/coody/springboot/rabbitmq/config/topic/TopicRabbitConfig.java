@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class TopicRabbitConfig {
 
-    // 绑定键
+    /** 绑定键 */
     public static final String MAN = "topic.man";
     public static final String WOMAN = "topic.woman";
 

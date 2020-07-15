@@ -22,7 +22,7 @@ import java.util.UUID;
 public class DirectProvider {
 
     @Resource
-    RabbitTemplate rabbitTemplate;
+    private RabbitTemplate rabbitTemplate;
 
     public void sendDirectMessage() {
         // 消息ID
