@@ -1,12 +1,11 @@
 package com.coody.springboot.rabbitmq.provider.direct;
 
+import com.coody.springboot.rabbitmq.util.DateUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -25,22 +24,15 @@ public class DirectProvider {
     private RabbitTemplate rabbitTemplate;
 
     public void sendDirectMessage() {
-        // 消息ID
         String messageId = String.valueOf(UUID.randomUUID());
-        // 消息内容
         String messageData = "test message，hello！";
-        // 创建时间
-        String createdTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-
+        String createdTime = DateUtil.currentDateTime(DateUtil.YYYY_MM_DD_HH_MM_SS);
         Map<String, Object> map = new HashMap<>();
         map.put("messageId", messageId);
         map.put("messageData", messageData);
         map.put("createdTime", createdTime);
-
         // 将消息绑定键值：testDirectRouting，发送到交换机testDirectExchange
         rabbitTemplate.convertAndSend("testDirectExchange", "testDirectRouting", map);
         log.info("DirectProvider发送消息成功");
     }
-
-
 }

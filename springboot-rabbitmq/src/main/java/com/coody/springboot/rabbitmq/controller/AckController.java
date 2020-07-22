@@ -1,13 +1,12 @@
 package com.coody.springboot.rabbitmq.controller;
 
+import com.coody.springboot.rabbitmq.util.DateUtil;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -42,7 +41,7 @@ public class AckController {
     public String messageAck1() {
         String messageId = String.valueOf(UUID.randomUUID());
         String messageData = "message: non-existent-exchange test message";
-        String createdTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        String createdTime = DateUtil.currentDateTime(DateUtil.YYYY_MM_DD_HH_MM_SS);
         Map<String, Object> map = new HashMap<>();
         map.put("messageId", messageId);
         map.put("messageData", messageData);
@@ -60,7 +59,7 @@ public class AckController {
     public String messageAck2() {
         String messageId = String.valueOf(UUID.randomUUID());
         String messageData = "message: lonelyDirectExchange test message";
-        String createdTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        String createdTime = DateUtil.currentDateTime(DateUtil.YYYY_MM_DD_HH_MM_SS);
         Map<String, Object> map = new HashMap<>();
         map.put("messageId", messageId);
         map.put("messageData", messageData);
@@ -78,7 +77,7 @@ public class AckController {
     public String messageAck3() {
         String messageId = String.valueOf(UUID.randomUUID());
         String messageData = "message: does not exist exchange and queue";
-        String createdTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        String createdTime = DateUtil.currentDateTime(DateUtil.YYYY_MM_DD_HH_MM_SS);
         Map<String, Object> map = new HashMap<>();
         map.put("messageId", messageId);
         map.put("messageData", messageData);
@@ -96,7 +95,7 @@ public class AckController {
     public String messageAck4() {
         String messageId = String.valueOf(UUID.randomUUID());
         String messageData = "message: send ok";
-        String createdTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        String createdTime = DateUtil.currentDateTime(DateUtil.YYYY_MM_DD_HH_MM_SS);
         Map<String, Object> map = new HashMap<>();
         map.put("messageId", messageId);
         map.put("messageData", messageData);
