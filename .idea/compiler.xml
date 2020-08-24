@@ -9,27 +9,29 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-cache" />
         <module name="springboot-mvc" />
-        <module name="springboot-swagger" />
+        <module name="springboot-interceptor" />
         <module name="springboot-aop" />
-        <module name="springboot-listener" />
         <module name="springboot-slf4j" />
+        <module name="springboot-json" />
+        <module name="springboot-acutator" />
         <module name="springboot-rabbitmq" />
         <module name="springboot-mongodb" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-exception" />
         <module name="springboot-log4j2" />
-        <module name="springboot-interceptor" />
-        <module name="springboot-mybatis" />
+        <module name="springboot-listener" />
+        <module name="springboot-task" />
         <module name="springboot-param" />
         <module name="springboot-redis" />
-        <module name="springboot-json" />
+        <module name="springboot-mybatis" />
         <module name="springboot-transaction" />
         <module name="springboot-druid" />
-        <module name="springboot-task" />
+        <module name="springboot-swagger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
+      <module name="springboot-acutator" target="1.8" />
       <module name="springboot-aop" target="1.8" />
       <module name="springboot-cache" target="1.8" />
       <module name="springboot-druid" target="1.8" />
