@@ -29,6 +29,7 @@
         <module>springboot-druid</module>
         <module>springboot-cache</module>
         <module>springboot-acutator</module>
+        <module>springboot-email</module>
     </modules>
 
     <properties>
