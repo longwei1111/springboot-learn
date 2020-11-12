@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.runlw</groupId>
+        <groupId>com.coolw</groupId>
         <artifactId>springboot-learn</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath/>
@@ -30,7 +30,15 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- knife4j -->
         <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+        <!-- swagger2 -->
+        <!--<dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>${springfox.swagger2.version}</version>
@@ -39,7 +47,7 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${springfox.swagger2.version}</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>

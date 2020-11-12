@@ -9,5 +9,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.10" level="project" />
+    <orderEntry type="module" module-name="coolw-common" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.75" level="project" />
   </component>
 </module>

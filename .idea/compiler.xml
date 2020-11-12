@@ -9,32 +9,36 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-cache" />
         <module name="springboot-mvc" />
-        <module name="springboot-interceptor" />
+        <module name="springboot-actuator" />
         <module name="springboot-aop" />
+        <module name="springboot-listener" />
+        <module name="coolw-common" />
         <module name="springboot-slf4j" />
-        <module name="springboot-json" />
-        <module name="springboot-acutator" />
+        <module name="springboot-transaction" />
         <module name="springboot-rabbitmq" />
         <module name="springboot-mongodb" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-exception" />
         <module name="springboot-log4j2" />
-        <module name="springboot-listener" />
+        <module name="springboot-interceptor" />
+        <module name="springboot-mybatis" />
         <module name="springboot-task" />
         <module name="springboot-param" />
         <module name="springboot-redis" />
-        <module name="springboot-mybatis" />
-        <module name="springboot-transaction" />
+        <module name="springboot-json" />
+        <module name="springboot-email" />
         <module name="springboot-druid" />
         <module name="springboot-swagger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="coolw-common" target="1.8" />
       <module name="demo" target="1.8" />
-      <module name="springboot-acutator" target="1.8" />
+      <module name="springboot-actuator" target="1.8" />
       <module name="springboot-aop" target="1.8" />
       <module name="springboot-cache" target="1.8" />
       <module name="springboot-druid" target="1.8" />
+      <module name="springboot-email" target="1.8" />
       <module name="springboot-exception" target="1.8" />
       <module name="springboot-interceptor" target="1.8" />
       <module name="springboot-json" target="1.8" />
@@ -56,6 +60,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="coolw-common" options="" />
       <module name="springboot-aop" options="" />
       <module name="springboot-cache" options="" />
       <module name="springboot-druid" options="" />

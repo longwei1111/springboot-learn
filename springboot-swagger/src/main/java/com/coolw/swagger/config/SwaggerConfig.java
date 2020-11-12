@@ -9,7 +9,6 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @Classname SwaggerConfig
@@ -18,16 +17,17 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @Date 2020-02-22 19:42
  */
 @Configuration
-@EnableSwagger2
+//@EnableSwagger2
+//@EnableKnife4j
 public class SwaggerConfig {
 
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                // 指定构建api文档的详细信息的方法，apiInfo()
+                // 指定构建api文档的详细信息的方法
                 .apiInfo(apiInfo())
                 .select()
-                // 指定要生成api接口的包路径，这里把controller作为包路径，生成controller中的所有接口
+                // 指定要生成api接口的包路径
                 .apis(RequestHandlerSelectors.basePackage("com.coolw.swagger.controller"))
                 .paths(PathSelectors.any())
                 .build();
@@ -35,8 +35,6 @@ public class SwaggerConfig {
 
     /**
      * 构建api文档的详细信息
-     *
-     * @return
      */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
@@ -45,7 +43,7 @@ public class SwaggerConfig {
                 // 接口描述
                 .description("")
                 // 个人信息
-                .contact(new Contact("lw", "", ""))
+                .contact(new Contact("coolw", "", ""))
                 // 版本
                 .version("1.0")
                 // 构建

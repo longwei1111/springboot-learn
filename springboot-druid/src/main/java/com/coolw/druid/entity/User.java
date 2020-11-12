@@ -1,6 +1,8 @@
 package com.coolw.druid.entity;
 
-import lombok.Data;
+import com.coolw.common.api.BaseEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * @Classname User
@@ -8,10 +10,12 @@ import lombok.Data;
  * @Date 2019/11/5 8:59
  * @Author by lw
  */
-@Data
-public class User {
+@Getter
+@Setter
+public class User extends BaseEntity {
 
-    private String id;
+    private static final long serialVersionUID = -7340362585670636066L;
+
     private String username;
     private String password;
 }

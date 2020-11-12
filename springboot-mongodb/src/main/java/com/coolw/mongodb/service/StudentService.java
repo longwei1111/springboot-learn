@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @Classname StudentService
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-27 16:01
  */
@@ -14,11 +14,11 @@ public interface StudentService {
 
     Student addStudent(Student student);
 
-    void deleteStudentById(String id);
+    void deleteStudentById(long id);
 
     Student updateStudent(Student student);
 
-    Student findStudentById(String id);
+    Student findStudentById(long id);
 
     List<Student> findAllStudent();
 }

@@ -5,7 +5,6 @@ import com.coolw.listener.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -22,7 +21,6 @@ import java.net.URLEncoder;
  * @Date 2020-02-25 14:47
  */
 @RestController
-@RequestMapping("/listener")
 public class UserController {
 
     private static final Logger log = LoggerFactory.getLogger(UserController.class);
@@ -30,7 +28,7 @@ public class UserController {
     @Resource
     private UserService userService;
 
-    @GetMapping("/getUser")
+    @GetMapping("/listener/getUser")
     public User getUser(HttpServletRequest request) {
         ServletContext application = request.getServletContext();
         User user = (User) application.getAttribute("user");
@@ -44,7 +42,7 @@ public class UserController {
      * @param request
      * @return
      */
-    @GetMapping("/getTotalUser")
+    @GetMapping("/listener/getTotalUser")
     public String getTotalUser(HttpServletRequest request) {
         Integer count = (Integer) request.getSession().getServletContext().getAttribute("count");
         return "当前在线人数：" + count;
@@ -56,7 +54,7 @@ public class UserController {
      * @param request
      * @return
      */
-    @GetMapping("/total")
+    @GetMapping("/listener/total")
     public String getTotal(HttpServletRequest request, HttpServletResponse response) {
         Cookie cookie;
         try {
@@ -74,13 +72,13 @@ public class UserController {
         return "当前在线人数：" + count;
     }
 
-    @GetMapping("/request")
+    @GetMapping("/listener/request")
     public String getRequestInfo(HttpServletRequest request) {
         log.info("requestListener中的初始化的name为：{}", request.getAttribute("name"));
         return "success";
     }
 
-    @GetMapping("/publish")
+    @GetMapping("/listener/publish")
     public User publish() {
         return userService.getUser1();
     }

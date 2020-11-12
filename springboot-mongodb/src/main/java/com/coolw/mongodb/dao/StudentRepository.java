@@ -7,11 +7,11 @@ import org.springframework.stereotype.Repository;
 
 /**
  * @Classname StudentRepository
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-27 15:55
  */
 @Repository
-public interface StudentRepository extends MongoRepository<Student, String> {
+public interface StudentRepository extends MongoRepository<Student, Long> {
 
 }

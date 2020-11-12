@@ -1,7 +1,7 @@
 package com.coolw.mongodb.controller;
 
+import com.coolw.common.api.ResultResponse;
 import com.coolw.mongodb.entity.Student;
-import com.coolw.mongodb.result.JsonResult;
 import com.coolw.mongodb.service.StudentService;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,12 +10,11 @@ import java.util.List;
 
 /**
  * @Classname StudentController
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-27 16:13
  */
 @RestController
-@RequestMapping("/student")
 public class StudentController {
 
     @Resource
@@ -23,60 +22,46 @@ public class StudentController {
 
     /**
      * 新增学生信息
-     *
-     * @param student
-     * @return
      */
-    @PostMapping("/add")
-    public JsonResult<Student> addStudent(@RequestBody Student student) {
+    @PostMapping("/student/add")
+    public ResultResponse<Student> addStudent(@RequestBody Student student) {
         Student result = studentService.addStudent(student);
-        return new JsonResult<>(result);
+        return new ResultResponse().success(result);
     }
 
     /**
      * 根据id查询学生信息
-     *
-     * @param id
-     * @return
      */
-    @PostMapping("/query/{id}")
-    public JsonResult<Student> findStudentById(@PathVariable String id) {
+    @PostMapping("/student/query/{id}")
+    public ResultResponse<Student> findStudentById(@PathVariable long id) {
         Student student = studentService.findStudentById(id);
-        return new JsonResult<>(student);
+        return new ResultResponse().success(student);
     }
 
     /**
      * 获取学生信息列表
-     *
-     * @return
      */
-    @GetMapping("/getAll")
-    public JsonResult<List<Student>> findAllStudent() {
+    @GetMapping("/student/getAll")
+    public ResultResponse<List<Student>> findAllStudent() {
         List<Student> studentList = studentService.findAllStudent();
-        return new JsonResult<>(studentList);
+        return new ResultResponse().success(studentList);
     }
 
     /**
      * 更新学生信息
-     *
-     * @param student
-     * @return
      */
-    @PostMapping("/update")
-    public JsonResult<Student> updateStudent(Student student) {
+    @PostMapping("/student/update")
+    public ResultResponse<Student> updateStudent(Student student) {
         Student result = studentService.updateStudent(student);
-        return new JsonResult<>(result);
+        return new ResultResponse().success(result);
     }
 
     /**
      * 根据id删除学生信息
-     *
-     * @param id
-     * @return
      */
-    @DeleteMapping("/delete/{id}")
-    public JsonResult deleteStudentById(@PathVariable String id) {
+    @DeleteMapping("/student/delete/{id}")
+    public ResultResponse deleteStudentById(@PathVariable long id) {
         studentService.deleteStudentById(id);
-        return new JsonResult();
+        return new ResultResponse().success();
     }
 }

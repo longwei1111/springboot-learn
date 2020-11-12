@@ -12,7 +12,7 @@ import java.util.UUID;
 
 /**
  * @Classname FanoutProvider
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-26 15:19
  */

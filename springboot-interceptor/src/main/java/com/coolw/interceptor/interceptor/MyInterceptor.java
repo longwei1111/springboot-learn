@@ -46,11 +46,7 @@ public class MyInterceptor implements HandlerInterceptor {
         // 通过方法，可以获取该方法上的自定义注解，然后通过注解来判断该方法是否要被拦截
         // @UnInterceptor 自定义注解，不被拦截
         UnInterceptor unInterceptor = method.getAnnotation(UnInterceptor.class);
-        if (null == unInterceptor) {
-            return false;
-        }
-
-        return true;
+        return null != unInterceptor;
     }
 
     @Override

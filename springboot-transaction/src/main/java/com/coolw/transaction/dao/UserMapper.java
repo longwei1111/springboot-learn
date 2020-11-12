@@ -1,7 +1,7 @@
 package com.coolw.transaction.dao;
 
 import com.coolw.transaction.entity.User;
-import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * @Classname UserMapper
@@ -13,10 +13,7 @@ public interface UserMapper {
 
     /**
      * 新增用户信息
-     *
-     * @param user
-     * @return
      */
     @Select("insert into user (user_name, pass_word) values (#{username}, #{password})")
-    Integer insertUser(User user);
+    int insertUser(User user);
 }

@@ -1,10 +1,10 @@
 package com.coolw.cache.entity;
 
+import com.coolw.common.api.BaseEntity;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-import java.io.Serializable;
+import lombok.Setter;
 
 /**
  * @Classname User
@@ -12,12 +12,14 @@ import java.io.Serializable;
  * @Author lw
  * @Date 2020-03-05 15:50
  */
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User implements Serializable {
+public class User extends BaseEntity {
 
-    private Integer id;
+    private static final long serialVersionUID = -6423227239244356899L;
+
     private String username;
     private String password;
 }

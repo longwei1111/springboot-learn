@@ -1,8 +1,8 @@
 package com.coolw.mongodb.service.impl;
 
-import com.coolw.mongodb.service.StudentService;
-import com.coolw.mongodb.entity.Student;
 import com.coolw.mongodb.dao.StudentRepository;
+import com.coolw.mongodb.entity.Student;
+import com.coolw.mongodb.service.StudentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.util.Objects;
 
 /**
  * @Classname StudentServiceImpl
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-27 16:00
  */
@@ -41,7 +41,7 @@ public class StudentServiceImpl implements StudentService {
      * @return
      */
     @Override
-    public void deleteStudentById(String id) {
+    public void deleteStudentById(long id) {
         Student student = findStudentById(id);
         if (Objects.nonNull(student)) {
             studentRepository.deleteById(id);
@@ -77,7 +77,7 @@ public class StudentServiceImpl implements StudentService {
      * @return
      */
     @Override
-    public Student findStudentById(String id) {
+    public Student findStudentById(long id) {
         return studentRepository.findById(id).get();
     }
 

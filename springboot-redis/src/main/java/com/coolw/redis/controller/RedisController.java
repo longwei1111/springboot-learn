@@ -5,7 +5,6 @@ import com.coolw.redis.entity.User;
 import com.coolw.redis.service.RedisService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -13,19 +12,18 @@ import java.util.List;
 
 /**
  * @Classname RedisController
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-25 21:01
  */
 @Slf4j
 @RestController
-@RequestMapping("/redis")
 public class RedisController {
 
     @Resource
     private RedisService redisService;
 
-    @GetMapping("/testString")
+    @GetMapping("/redis/testString")
     public void testString() {
         // 测试redis的String类型
         redisService.setString("lw", "123456");
@@ -37,14 +35,14 @@ public class RedisController {
         log.info("userInfo={}", redisService.getString("userInfo"));
     }
 
-    @GetMapping("/testHash")
+    @GetMapping("/redis/testHash")
     public void testHash() {
         // 测试redis的Hash类型
         redisService.setHash("coody", "上海", "zhangsan");
         log.info("name={}", redisService.getHash("coody", "上海"));
     }
 
-    @GetMapping("/testList")
+    @GetMapping("/redis/testList")
     public void testList() {
         // 测试redis的List类型
         redisService.setList("city", "上海");

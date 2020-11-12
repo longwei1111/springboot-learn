@@ -1,43 +1,45 @@
 package com.coolw.exception.controller;
 
-import com.coolw.exception.exception.BusinessException;
-import com.coolw.exception.result.JsonResult;
+import com.coolw.common.api.ResultResponse;
 import com.coolw.exception.enums.BusinessMsgEnum;
+import com.coolw.exception.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Classname ExceptionController
- * @Description TODO
+ * @Description
  * @Author lw
  * @Date 2020-02-24 15:37
  */
 @Slf4j
 @RestController
-@RequestMapping("/exception")
 public class ExceptionController {
 
-    @PostMapping("/test")
-    public JsonResult test(@RequestParam("name") String name, @RequestParam("pass") String pass) {
+    @PostMapping("/exception/test")
+    public ResultResponse test(@RequestParam("name") String name, @RequestParam("pass") String pass) {
         log.info("name={}", name);
         log.info("pass={}", pass);
-        return new JsonResult();
+        return new ResultResponse().success();
     }
 
-    @GetMapping("/testNpe")
-    public JsonResult testNullPointerException() {
+    @GetMapping("/exception/testNpe")
+    public ResultResponse testNullPointerException() {
         String name = null;
         log.info("name长度= {}", name.length());
-        return new JsonResult();
+        return new ResultResponse().success();
     }
 
-    @GetMapping("/business")
-    public JsonResult testBusinessException() {
+    @GetMapping("/exception/business")
+    public ResultResponse testBusinessException() {
         try {
             int i = 1 / 0;
         } catch (Exception e) {
             throw new BusinessException(BusinessMsgEnum.UNEXPECTED_EXCEPTION);
         }
-        return new JsonResult();
+        return new ResultResponse().success();
     }
 }

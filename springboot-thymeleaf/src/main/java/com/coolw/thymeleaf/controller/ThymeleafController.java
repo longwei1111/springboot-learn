@@ -19,10 +19,9 @@ import java.util.List;
  * @Date 2020-02-24 14:48
  */
 @Controller
-@RequestMapping("/thymeleaf")
 public class ThymeleafController {
 
-    @RequestMapping("/test404")
+    @RequestMapping("/thymeleaf/test404")
     public String test404() {
         return "index";
     }
@@ -35,11 +34,8 @@ public class ThymeleafController {
 
     /**
      * Thymeleaf 中处理对象
-     *
-     * @param model
-     * @return
      */
-    @GetMapping("/getUser")
+    @GetMapping("/thymeleaf/getUser")
     public String getUser(Model model) {
         User user = new User(1, "zhangsan", "123456");
         model.addAttribute("user", user);
@@ -48,11 +44,8 @@ public class ThymeleafController {
 
     /**
      * Thymeleaf 中处理 List
-     *
-     * @param model
-     * @return
      */
-    @GetMapping("/getUserList")
+    @GetMapping("/thymeleaf/getUserList")
     public String getUserList(Model model) {
         List<User> userList = new ArrayList<>();
         userList.add(new User(1, "zhangsan", "123456"));

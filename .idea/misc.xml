@@ -4,10 +4,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-log4j2/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-druid/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-cache/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-acutator/pom.xml" />
+        <option value="$PROJECT_DIR$/coolw-common/pom.xml" />
       </list>
     </option>
   </component>
