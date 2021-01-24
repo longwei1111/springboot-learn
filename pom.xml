@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>coolw-common</module>
         <module>springboot-json</module>
         <module>springboot-slf4j</module>
         <module>springboot-param</module>
