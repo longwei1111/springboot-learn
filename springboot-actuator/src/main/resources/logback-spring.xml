@@ -34,7 +34,7 @@
     </appender>
 
     <!-- project default level -->
-    <logger name="com.coolw.slf4j" level="INFO"/>
+    <logger name="com.coolw.acutator" level="INFO"/>
 
     <!-- 日志输出级别 -->
     <root level="INFO">

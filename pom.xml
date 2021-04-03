@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.coolw</groupId>
+    <groupId>com.lyh</groupId>
     <artifactId>springboot-learn</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -11,12 +11,7 @@
     <modules>
         <module>coolw-common</module>
         <module>springboot-json</module>
-        <module>springboot-slf4j</module>
-        <module>springboot-param</module>
-        <module>springboot-mvc</module>
-        <module>springboot-swagger</module>
         <module>springboot-thymeleaf</module>
-        <module>springboot-exception</module>
         <module>springboot-aop</module>
         <module>springboot-mybatis</module>
         <module>springboot-transaction</module>
@@ -30,7 +25,8 @@
         <module>springboot-druid</module>
         <module>springboot-cache</module>
         <module>springboot-actuator</module>
-        <module>springboot-email</module>
+        <module>springboot-mybatisplus</module>
+        <module>springboot-function</module>
     </modules>
 
     <properties>
@@ -48,6 +44,7 @@
         <fastjson.version>1.2.75</fastjson.version>
         <springfox.swagger2.version>2.9.2</springfox.swagger2.version>
         <lombok.version>1.18.10</lombok.version>
+        <mybatis.plus.version>3.1.0</mybatis.plus.version>
     </properties>
 
     <dependencyManagement>
