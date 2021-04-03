@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/springboot-cache/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-acutator/pom.xml" />
         <option value="$PROJECT_DIR$/coolw-common/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatisplus/pom.xml" />
       </list>
     </option>
   </component>

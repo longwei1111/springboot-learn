@@ -9,26 +9,27 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-cache" />
         <module name="springboot-mvc" />
+        <module name="springboot-swagger" />
+        <module name="springboot-mongodb" />
         <module name="springboot-actuator" />
         <module name="springboot-aop" />
-        <module name="springboot-listener" />
         <module name="coolw-common" />
         <module name="springboot-slf4j" />
-        <module name="springboot-transaction" />
+        <module name="springboot-json" />
         <module name="springboot-rabbitmq" />
-        <module name="springboot-mongodb" />
+        <module name="springboot-interceptor" />
+        <module name="springboot-mybatisplus" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-exception" />
         <module name="springboot-log4j2" />
-        <module name="springboot-interceptor" />
-        <module name="springboot-mybatis" />
-        <module name="springboot-task" />
+        <module name="springboot-listener" />
+        <module name="springboot-email" />
         <module name="springboot-param" />
         <module name="springboot-redis" />
-        <module name="springboot-json" />
-        <module name="springboot-email" />
+        <module name="springboot-mybatis" />
+        <module name="springboot-transaction" />
         <module name="springboot-druid" />
-        <module name="springboot-swagger" />
+        <module name="springboot-task" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -48,6 +49,7 @@
       <module name="springboot-mongodb" target="1.8" />
       <module name="springboot-mvc" target="1.8" />
       <module name="springboot-mybatis" target="1.8" />
+      <module name="springboot-mybatisplus" target="1.8" />
       <module name="springboot-param" target="1.8" />
       <module name="springboot-rabbitmq" target="1.8" />
       <module name="springboot-redis" target="1.8" />
@@ -72,6 +74,7 @@
       <module name="springboot-mongodb" options="" />
       <module name="springboot-mvc" options="" />
       <module name="springboot-mybatis" options="" />
+      <module name="springboot-mybatisplus" options="" />
       <module name="springboot-param" options="" />
       <module name="springboot-rabbitmq" options="" />
       <module name="springboot-redis" options="" />
