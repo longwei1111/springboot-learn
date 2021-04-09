@@ -58,6 +58,15 @@
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
         <!-- module:email end -->
+
+        <!-- module:sms start -->
+        <!--秒滴云-->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.11</version>
+        </dependency>
+        <!-- module:sms end -->
     </dependencies>
 
     <build>
