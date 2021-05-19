@@ -5,9 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * @Classname User
  * @Description 用户实体类
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 11:29
  */
 @Getter

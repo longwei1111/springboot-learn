@@ -4,12 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-
 /**
- * @Classname User
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-22 17:17
  */
 @Data

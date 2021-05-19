@@ -1,14 +1,13 @@
 package com.coolw.function.mvc.controller;
 
-import com.coolw.common.api.ResultResponse;
+import com.coolw.common.api.Response;
 import com.coolw.function.mvc.entity.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @Classname MvcController
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-22 19:22
  */
 @Slf4j
@@ -27,42 +26,42 @@ public class MvcController {
      * @PathVariable 获取url参数
      */
     @GetMapping("/mvc/user/{id}")
-    public ResultResponse testPathVariable(@PathVariable Integer id) {
+    public Response testPathVariable(@PathVariable Integer id) {
         log.info("获取到的id={}", id);
-        return new ResultResponse().success();
+        return new Response().success();
     }
 
     @GetMapping("/mvc/user/{idd}/{name}")
-    public ResultResponse testPathVariable1(@PathVariable(value = "idd") Integer id, @PathVariable String name) {
+    public Response testPathVariable1(@PathVariable(value = "idd") Integer id, @PathVariable String name) {
         log.info("获取到的id={}, name={}", id, name);
-        return new ResultResponse().success();
+        return new Response().success();
     }
 
     /**
      * @RequestParam 获取请求参数
      */
     @GetMapping("/mvc/user")
-    public ResultResponse testRequestParam(@RequestParam(value = "idd", required = false) Integer id) {
+    public Response testRequestParam(@RequestParam(value = "idd", required = false) Integer id) {
         log.info("获取到的id={}", id);
-        return new ResultResponse().success();
+        return new Response().success();
     }
 
     /**
      * 多个属性表单请求
      */
     @PostMapping("/mvc/form1")
-    public ResultResponse testForm1(@RequestParam String username, @RequestParam String password) {
+    public Response testForm1(@RequestParam String username, @RequestParam String password) {
         log.info("获取到的username={},password={}", username, password);
-        return new ResultResponse().success();
+        return new Response().success();
     }
 
     /**
      * 实体类对象请求
      */
     @PostMapping("/mvc/form2")
-    public ResultResponse testForm2(User user) {
+    public Response testForm2(User user) {
         log.info("获取到的username={},password={}", user.getUsername(), user.getPassword());
-        return new ResultResponse().success();
+        return new Response().success();
     }
 
     /**
@@ -70,8 +69,8 @@ public class MvcController {
      * @RequestBody 用于接收前端传来的实体(json)
      */
     @PostMapping("/mvc/userInfo")
-    public ResultResponse testRequestBody(@RequestBody User user) {
+    public Response testRequestBody(@RequestBody User user) {
         log.info("获取到的username={},password={}", user.getUsername(), user.getPassword());
-        return new ResultResponse().success();
+        return new Response().success();
     }
 }

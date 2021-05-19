@@ -14,10 +14,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Classname QRCodeGeneratorUtils
  * @Description 生成二维码工具类
  * @Date 2021/4/7 16:30
- * @Author lw
+ * @Author coolw
  */
 public class QRCodeGeneratorUtils {
 

@@ -10,7 +10,6 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 
 /**
- * @Classname DruidConfigration
  * @Description 手动初始化DataSource
  * @Date 2019/11/5 8:48
  * @Created by lw

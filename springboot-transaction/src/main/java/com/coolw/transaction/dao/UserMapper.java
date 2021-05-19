@@ -4,9 +4,8 @@ import com.coolw.transaction.entity.User;
 import org.apache.ibatis.annotations.Select;
 
 /**
- * @Classname UserMapper
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 11:28
  */
 public interface UserMapper {

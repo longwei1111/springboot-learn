@@ -8,9 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Classname FanoutRabbitConfig
  * @Description 扇型交换机(广播模式)
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-26 15:12
  */
 @Configuration

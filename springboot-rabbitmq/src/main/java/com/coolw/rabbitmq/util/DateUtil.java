@@ -4,9 +4,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * @Classname DateUtil
  * @Description 日期工具类
- * @Author lw
+ * @Author coolw
  * @Date 2020-07-22 15:19
  */
 public class DateUtil {

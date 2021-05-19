@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 /**
- * @Classname SendDirectMsgController
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-26 14:07
  */
 @RestController

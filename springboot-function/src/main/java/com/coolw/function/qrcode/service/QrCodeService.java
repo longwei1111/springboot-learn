@@ -1,10 +1,9 @@
 package com.coolw.function.qrcode.service;
 
 /**
- * @Classname QrCodeService
  * @Description 二维码服务接口
  * @Date 2021/4/9 13:35
- * @Author lw
+ * @Author coolw
  */
 public interface QrCodeService {
 

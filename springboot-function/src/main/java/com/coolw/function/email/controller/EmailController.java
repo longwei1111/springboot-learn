@@ -7,10 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 /**
- * @Classname EmailController
  * @Description
  * @Date 2021/4/9 15:05
- * @Author lw
+ * @Author coolw
  */
 @RestController
 public class EmailController {

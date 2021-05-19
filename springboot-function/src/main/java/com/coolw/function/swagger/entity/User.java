@@ -7,9 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @Classname User
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-22 20:03
  */
 @ApiModel(value = "用户实体类")

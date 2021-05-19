@@ -3,9 +3,8 @@ package com.coolw.function.mvc.entity;
 import lombok.Data;
 
 /**
- * @Classname User
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-22 19:36
  */
 @Data

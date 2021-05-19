@@ -8,9 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Classname DirectRabbitConfig
  * @Description 直连交换器
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-26 14:00
  */
 @Configuration

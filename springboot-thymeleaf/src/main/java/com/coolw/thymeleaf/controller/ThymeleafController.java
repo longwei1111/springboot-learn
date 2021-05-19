@@ -10,12 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Classname ThymeleafController
  * @Description
  *          在使用模板引擎时，Controller 层就不能用 @RestController 注解了，
  *          因为在使用 thymeleaf 模板时，返回的是视图文件名，比如上面的 Controller 中是返回到 index.html 页面，
  *          如果使用 @RestController 的话，会把 index 当作 String 解析了，直接返回到页面了，而不是去找 index.html 页面
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-24 14:48
  */
 @Controller

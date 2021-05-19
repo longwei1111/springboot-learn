@@ -3,6 +3,50 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-interceptor" />
+        <module name="springboot-actuator" />
+        <module name="springboot-cache" />
+        <module name="springboot-aop" />
+        <module name="coolw-common" />
+        <module name="springboot-json" />
+        <module name="springboot-rabbitmq" />
+        <module name="springboot-mongodb" />
+        <module name="springboot-thymeleaf" />
+        <module name="springboot-log4j2" />
+        <module name="springboot-listener" />
+        <module name="springboot-task" />
+        <module name="springboot-mybatisplus" />
+        <module name="springboot-mybatis" />
+        <module name="springboot-transaction" />
+        <module name="springboot-druid" />
+        <module name="springboot-function" />
+        <module name="springboot-redis" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="coolw-common" target="1.8" />
+      <module name="springboot-actuator" target="1.8" />
+      <module name="springboot-aop" target="1.8" />
+      <module name="springboot-cache" target="1.8" />
+      <module name="springboot-druid" target="1.8" />
+      <module name="springboot-function" target="1.8" />
+      <module name="springboot-interceptor" target="1.8" />
+      <module name="springboot-json" target="1.8" />
+      <module name="springboot-learn" target="1.8" />
+      <module name="springboot-listener" target="1.8" />
+      <module name="springboot-log4j2" target="1.8" />
+      <module name="springboot-mongodb" target="1.8" />
+      <module name="springboot-mybatis" target="1.8" />
+      <module name="springboot-mybatisplus" target="1.8" />
+      <module name="springboot-rabbitmq" target="1.8" />
+      <module name="springboot-redis" target="1.8" />
+      <module name="springboot-task" target="1.8" />
+      <module name="springboot-thymeleaf" target="1.8" />
+      <module name="springboot-transaction" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

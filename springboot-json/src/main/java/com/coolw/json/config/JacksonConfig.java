@@ -10,9 +10,8 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import java.math.BigDecimal;
 
 /**
- * @Classname JacksonConfig
  * @Description jackson配置，数据转换
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-22 17:36
  */
 //@Configuration

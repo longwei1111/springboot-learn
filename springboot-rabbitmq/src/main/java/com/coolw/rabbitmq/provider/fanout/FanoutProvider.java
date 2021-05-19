@@ -11,9 +11,8 @@ import java.util.Map;
 import java.util.UUID;
 
 /**
- * @Classname FanoutProvider
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-26 15:19
  */
 @Slf4j

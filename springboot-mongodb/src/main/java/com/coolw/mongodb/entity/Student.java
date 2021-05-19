@@ -6,9 +6,8 @@ import org.springframework.data.annotation.Id;
 import java.io.Serializable;
 
 /**
- * @Classname Student
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-27 15:57
  */
 @Data

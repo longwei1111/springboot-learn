@@ -1,10 +1,9 @@
 package com.coolw.common.api;
 
 /**
- * @Classname ResponseService
  * @Description
  * @Date 2021/1/19 10:15
- * @Author lw
+ * @Author coolw
  */
 public interface ResponseService {
 

@@ -9,9 +9,8 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * @Classname AsyncTaskPoolConfig
  * @Description 异步任务-线程池配置
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-27 21:26
  */
 @Configuration

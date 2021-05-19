@@ -1,6 +1,6 @@
 package com.coolw.function.exception.exception;
 
-import com.coolw.common.api.ResultResponse;
+import com.coolw.common.api.Response;
 import com.coolw.common.enums.ErrCodeEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -11,10 +11,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
- * @Classname GlobalExceptionHandler
  * @Description 全局异常处理类。@ControllerAdvice 全局异常处理注解，需要配合@ExceptionHandler使用
- *
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-24 15:32
  */
 @Slf4j
@@ -30,9 +28,9 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(MissingServletRequestParameterException.class)
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
-    public ResultResponse handleHttpMessageNotReadableException(MissingServletRequestParameterException ex) {
+    public Response handleHttpMessageNotReadableException(MissingServletRequestParameterException ex) {
         log.error("缺少请求参数，{}", ex.getMessage());
-        return new ResultResponse().fail(ErrCodeEnum.VALIDATTE_FAIL);
+        return new Response().fail(ErrCodeEnum.VALIDATTE_FAIL);
     }
 
     /**
@@ -43,9 +41,9 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(NullPointerException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public ResultResponse handleNullPointerException(NullPointerException ex){
+    public Response handleNullPointerException(NullPointerException ex){
         log.error("参数空指针 {}", ex.getMessage());
-        return new ResultResponse().fail(ErrCodeEnum.VALIDATTE_FAIL);
+        return new Response().fail(ErrCodeEnum.VALIDATTE_FAIL);
     }
 
     /**
@@ -56,11 +54,11 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(BusinessException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public ResultResponse handleBusinessException(BusinessException businessException) {
+    public Response handleBusinessException(BusinessException businessException) {
         log.error("自定义业务异常");
         String code = businessException.getCode();
         String msg = businessException.getMsg();
-        return new ResultResponse().fail(code, msg);
+        return new Response().fail(code, msg);
     }
 
     /**
@@ -71,8 +69,8 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public ResultResponse handleUnexceptedServer(Exception ex) {
+    public Response handleUnexceptedServer(Exception ex) {
         log.error("系统异常:", ex);
-        return new ResultResponse().fail(ErrCodeEnum.SYS_FAIL);
+        return new Response().fail(ErrCodeEnum.SYS_FAIL);
     }
 }

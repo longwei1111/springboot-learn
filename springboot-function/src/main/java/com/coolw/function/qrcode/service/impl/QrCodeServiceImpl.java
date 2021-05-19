@@ -12,10 +12,9 @@ import java.io.IOException;
 import java.net.InetAddress;
 
 /**
- * @Classname QrCodeServiceImpl
  * @Description 二维码服务实现类
  * @Date 2021/4/9 13:35
- * @Author lw
+ * @Author coolw
  */
 @Service
 public class QrCodeServiceImpl implements QrCodeService {

@@ -4,10 +4,9 @@ import com.coolw.common.api.ResponseService;
 import lombok.AllArgsConstructor;
 
 /**
- * @Classname ResFlagEnum
  * @Description 响应标识枚举定义
  * @Date 2021/1/19 10:14
- * @Author lw
+ * @Author coolw
  */
 @AllArgsConstructor
 public enum ResFlagEnum implements ResponseService {

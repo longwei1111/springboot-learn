@@ -1,18 +1,19 @@
 package com.coolw.common.api;
 
 import com.coolw.common.enums.ResFlagEnum;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Objects;
 
 /**
- * @Classname ResultResponse
  * @Description 统一结果响应
  * @Date 2021/1/19 10:06
- * @Author lw
+ * @Author coolw
  */
-@Data
-public class ResultResponse<T> extends BaseDomain {
+@Getter
+@Setter
+public class Response<T> extends BaseDomain {
 
     private static final long serialVersionUID = 8176438273722608810L;
 
@@ -25,39 +26,39 @@ public class ResultResponse<T> extends BaseDomain {
 
     private T data;
 
-    public ResultResponse success() {
-        ResultResponse resultResponse = new ResultResponse<>();
+    public Response success() {
+        Response resultResponse = new Response<>();
         resultResponse.setFlag(ResFlagEnum.SUCCESS.getResponseCode());
         return resultResponse;
     }
 
-    public ResultResponse success(T data) {
-        ResultResponse resultResponse = success();
+    public Response success(T data) {
+        Response resultResponse = success();
         resultResponse.setData(data);
         return resultResponse;
     }
 
-    public ResultResponse fail() {
-        ResultResponse resultResponse = new ResultResponse<>();
+    public Response fail() {
+        Response resultResponse = new Response<>();
         resultResponse.setFlag(ResFlagEnum.FAIL.getResponseCode());
         return resultResponse;
     }
 
-    public ResultResponse fail(String code, String msg) {
-        ResultResponse resultResponse = fail();
+    public Response fail(String code, String msg) {
+        Response resultResponse = fail();
         resultResponse.setCode(code);
         resultResponse.setMsg(msg);
         return resultResponse;
     }
 
-    public ResultResponse fail(String msg) {
-        ResultResponse resultResponse = fail();
+    public Response fail(String msg) {
+        Response resultResponse = fail();
         resultResponse.setMsg(msg);
         return resultResponse;
     }
 
-    public ResultResponse fail(ResponseService responseService) {
-        ResultResponse resultResponse = fail();
+    public Response fail(ResponseService responseService) {
+        Response resultResponse = fail();
         resultResponse.setCode(responseService.getResponseCode());
         resultResponse.setMsg(responseService.getResponseMessage());
         return resultResponse;

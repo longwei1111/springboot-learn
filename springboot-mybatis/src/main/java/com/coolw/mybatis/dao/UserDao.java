@@ -6,9 +6,8 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 /**
- * @Classname UserDao
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-03-05 15:51
  */
 public interface UserDao {

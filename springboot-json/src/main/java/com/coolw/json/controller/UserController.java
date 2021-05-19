@@ -1,6 +1,6 @@
 package com.coolw.json.controller;
 
-import com.coolw.common.api.ResultResponse;
+import com.coolw.common.api.Response;
 import com.coolw.json.entity.Cust;
 import com.coolw.json.entity.User;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,9 +11,8 @@ import java.math.BigDecimal;
 import java.util.*;
 
 /**
- * @Classname UserController
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-22 17:27
  */
 @RestController
@@ -69,9 +68,9 @@ public class UserController {
      * @return JsonResult<User>
      */
     @RequestMapping("/json/userJson")
-    public ResultResponse<User> getUserJson() {
+    public Response<User> getUserJson() {
         User user = new User(1, "zhangsan", "123456");
-        return new ResultResponse().success(user);
+        return new Response().success(user);
     }
 
     /**
@@ -80,11 +79,11 @@ public class UserController {
      * @return JsonResult<List<User>>
      */
     @RequestMapping("/json/userListJson")
-    public ResultResponse<List<User>> getUserListJson() {
+    public Response<List<User>> getUserListJson() {
         List<User> userList = new ArrayList<>();
         userList.add(new User(2, "zhangsan", "123456"));
         userList.add(new User(2, "lisi", "123456"));
-        return new ResultResponse().success(userList);
+        return new Response().success(userList);
     }
 
     /**
@@ -93,13 +92,13 @@ public class UserController {
      * @return JsonResult<Map<String, Object>>
      */
     @RequestMapping("/json/getMapJson")
-    public ResultResponse<Map<String, Object>> getMapJson() {
+    public Response<Map<String, Object>> getMapJson() {
         Map<String, Object> map = new HashMap<>();
         User user = new User(1, "zhangsan", "123456");
         map.put("用户信息", user);
         map.put("博客地址", "https://www.cnblogs.com/lwcode6/");
         map.put("住址", null);
-        return new ResultResponse().success(map);
+        return new Response().success(map);
     }
 
     @GetMapping("/json/now")

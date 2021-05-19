@@ -4,9 +4,8 @@ import com.coolw.listener.entity.User;
 import org.springframework.context.ApplicationEvent;
 
 /**
- * @Classname MyEvent
  * @Description 自定义事件
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 15:57
  */
 public class MyEvent extends ApplicationEvent {

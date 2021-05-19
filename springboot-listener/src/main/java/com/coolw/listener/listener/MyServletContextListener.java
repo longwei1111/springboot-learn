@@ -10,9 +10,8 @@ import org.springframework.stereotype.Component;
 import javax.servlet.ServletContext;
 
 /**
- * @Classname MyServletContextListener
  * @Description 使用ApplicationListener来初始化一些数据到application域中的监听器
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 14:49
  */
 @Component

@@ -9,10 +9,9 @@ import javax.annotation.Resource;
 import java.util.Date;
 
 /**
- * @Classname EmailServiceImpl
  * @Description
  * @Date 2021/4/9 15:09
- * @Author lw
+ * @Author coolw
  */
 @Service
 public class EmailServiceImpl implements EmailService {

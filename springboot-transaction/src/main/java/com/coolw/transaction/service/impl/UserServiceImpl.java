@@ -11,9 +11,8 @@ import javax.annotation.Resource;
 import java.sql.SQLException;
 
 /**
- * @Classname UserServiceImpl
  * @Description Spring Boot 默认的事务规则是遇到运行异常（RuntimeException）和程序错误（Error）才会回滚
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 11:36
  */
 @Slf4j

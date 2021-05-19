@@ -1,6 +1,6 @@
 package com.coolw.mongodb.controller;
 
-import com.coolw.common.api.ResultResponse;
+import com.coolw.common.api.Response;
 import com.coolw.mongodb.entity.User;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
@@ -14,9 +14,8 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @Classname MongoController
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-27 15:15
  */
 @RestController
@@ -29,27 +28,27 @@ public class UserController {
      * 新增用户信息
      */
     @PostMapping("/user/add")
-    public ResultResponse<User> addUser(User user) {
+    public Response<User> addUser(User user) {
         User resultUser = mongoTemplate.insert(user, "user");
-        return new ResultResponse().success(resultUser);
+        return new Response().success(resultUser);
     }
 
     /**
      * 根据id查询用户信息
      */
     @PostMapping("/user/query/{id}")
-    public ResultResponse<User> getUser(@PathVariable Integer id) {
+    public Response<User> getUser(@PathVariable Integer id) {
         Query query = new Query();
         query.addCriteria(Criteria.where("id").is(id));
         User user = mongoTemplate.findOne(query, User.class, "user");
-        return new ResultResponse().success(user);
+        return new Response().success(user);
     }
 
     /**
      * 更新用户信息
      */
     @PostMapping("/user/update")
-    public ResultResponse<UpdateResult> update(User user) {
+    public Response<UpdateResult> update(User user) {
         Query query = new Query();
         query.addCriteria(Criteria.where("_id").is(user.getId()));
 
@@ -57,26 +56,26 @@ public class UserController {
         update.set("password", user.getPassword());
 
         UpdateResult updateResult = mongoTemplate.updateFirst(query, update, "user");
-        return new ResultResponse().success(updateResult);
+        return new Response().success(updateResult);
     }
 
     /**
      * 获取用户信息列表
      */
     @GetMapping("/user/getAll")
-    public ResultResponse<List<User>> getAllUser() {
+    public Response<List<User>> getAllUser() {
         List<User> userList = mongoTemplate.findAll(User.class, "user");
-        return new ResultResponse().success(userList);
+        return new Response().success(userList);
     }
 
     /**
      * 根据id删除用户信息
      */
     @DeleteMapping("/user/delete/{id}")
-    public ResultResponse<DeleteResult> deleteUser(@PathVariable Integer id) {
+    public Response<DeleteResult> deleteUser(@PathVariable Integer id) {
         Query query = new Query();
         query.addCriteria(Criteria.where("id").is(id));
         DeleteResult deleteResult = mongoTemplate.remove(query, User.class, "user");
-        return new ResultResponse().success(deleteResult);
+        return new Response().success(deleteResult);
     }
 }

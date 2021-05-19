@@ -8,9 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Classname TopicRabbitConfig
  * @Description 主题交换机
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-26 14:41
  */
 @Configuration

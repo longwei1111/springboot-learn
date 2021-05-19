@@ -14,9 +14,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Classname DruidConfig
  * @Description 注解初始化DataSource
- * @Author lw
+ * @Author coolw
  * @Date 2019-12-20 13:34
  */
 @Configuration

@@ -12,9 +12,8 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @Classname LogAspectHandler
  * @Description 日志切面处理类
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-24 17:37
  */
 @Slf4j

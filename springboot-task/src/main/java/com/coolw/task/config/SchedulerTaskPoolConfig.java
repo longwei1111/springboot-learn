@@ -7,9 +7,8 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.scheduling.config.ScheduledTaskRegistrar;
 
 /**
- * @Classname SchedulerTaskPoolConfig
  * @Description 定时任务-线程池配置
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-27 22:24
  */
 @Configuration

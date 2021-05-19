@@ -7,9 +7,8 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
 /**
- * @Classname MyEventListener
  * @Description 自定义监听器，监听MyEvent事件
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 16:01
  */
 @Slf4j
