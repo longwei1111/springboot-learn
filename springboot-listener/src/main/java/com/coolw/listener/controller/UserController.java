@@ -37,9 +37,6 @@ public class UserController {
     /**
      * 获取当前在线人数，该方法有bug
      * 当关闭一个浏览器访问时，数据不减1
-     *
-     * @param request
-     * @return
      */
     @GetMapping("/listener/getTotalUser")
     public String getTotalUser(HttpServletRequest request) {
@@ -49,9 +46,6 @@ public class UserController {
 
     /**
      * 获取当前在线人数
-     *
-     * @param request
-     * @return
      */
     @GetMapping("/listener/total")
     public String getTotal(HttpServletRequest request, HttpServletResponse response) {

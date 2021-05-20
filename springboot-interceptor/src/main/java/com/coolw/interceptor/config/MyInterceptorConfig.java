@@ -17,8 +17,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 //
 //    /**
 //     * 将自定义拦截器添加进去，addPathPatterns方法是添加要拦截的请求
-//     *
-//     * @param registry
 //     */
 //    @Override
 //    protected void addInterceptors(InterceptorRegistry registry) {
@@ -28,8 +26,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 //
 //    /**
 //     * 用来指定静态资源不被拦截，否则继承WebMvcConfigurationSupport这种方式会导致静态资源无法直接访问
-//     *
-//     * @param registry
 //     */
 //    /*@Override
 //    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -47,8 +43,6 @@ public class MyInterceptorConfig implements WebMvcConfigurer {
 
     /**
      * 解决静态资源被拦截问题
-     *
-     * @param registry
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

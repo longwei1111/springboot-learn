@@ -23,8 +23,6 @@ public class FanoutRabbitConfig {
 
     /**
      * 创建队列：fanout.A
-     *
-     * @return
      */
     @Bean
     public Queue queueA() {
@@ -33,8 +31,6 @@ public class FanoutRabbitConfig {
 
     /**
      * 创建队列：fanout.B
-     *
-     * @return
      */
     @Bean
     public Queue queueB() {
@@ -43,8 +39,6 @@ public class FanoutRabbitConfig {
 
     /**
      * 创建队列：fanout.C
-     *
-     * @return
      */
     @Bean
     public Queue queueC() {
@@ -53,8 +47,6 @@ public class FanoutRabbitConfig {
 
     /**
      * 创建交换机：fanoutExchange
-     *
-     * @return
      */
     @Bean
     FanoutExchange fanoutExchange() {
@@ -63,8 +55,6 @@ public class FanoutRabbitConfig {
 
     /**
      * 将队列fanout.A和交换机fanoutExchange绑定
-     *
-     * @return
      */
     @Bean
     Binding bindingExchangeA() {
@@ -73,8 +63,6 @@ public class FanoutRabbitConfig {
 
     /**
      * 将队列fanout.B和交换机fanoutExchange绑定
-     *
-     * @return
      */
     @Bean
     Binding bindingExchangeB() {
@@ -83,8 +71,6 @@ public class FanoutRabbitConfig {
 
     /**
      * 将队列fanout.C和交换机fanoutExchange绑定
-     *
-     * @return
      */
     @Bean
     Binding bindingExchangeC() {

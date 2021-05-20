@@ -23,8 +23,6 @@ public class DruidConfig {
 
     /**
      * Druid配置
-     *
-     * @return DataSource
      */
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
@@ -35,8 +33,6 @@ public class DruidConfig {
 
     /**
      * 注册Servlet
-     *
-     * @return ServletRegistrationBean
      */
     @Bean
     public ServletRegistrationBean statViewServlet(){
@@ -57,8 +53,6 @@ public class DruidConfig {
 
     /**
      * 注册Filter
-     *
-     * @return FilterRegistrationBean
      */
     @Bean
     public FilterRegistrationBean druidStatFilter(){

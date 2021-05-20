@@ -26,8 +26,6 @@ public class UserController {
 
     /**
      * 获取单个实体对象
-     *
-     * @return User
      */
     @RequestMapping("/json/user")
     public User getUser() {
@@ -36,8 +34,6 @@ public class UserController {
 
     /**
      * 获取列表
-     *
-     * @return List<User>
      */
     @RequestMapping("/json/userList")
     public List<User> getUserList() {
@@ -49,8 +45,6 @@ public class UserController {
 
     /**
      * 获取map
-     *
-     * @return Map<String, Object>
      */
     @RequestMapping("/json/getMap")
     public Map<String, Object> getMap() {
@@ -64,8 +58,6 @@ public class UserController {
 
     /**
      * 获取实体对象-json
-     *
-     * @return JsonResult<User>
      */
     @RequestMapping("/json/userJson")
     public Response<User> getUserJson() {
@@ -75,8 +67,6 @@ public class UserController {
 
     /**
      * 获取实体对象列表-json
-     *
-     * @return JsonResult<List<User>>
      */
     @RequestMapping("/json/userListJson")
     public Response<List<User>> getUserListJson() {
@@ -88,8 +78,6 @@ public class UserController {
 
     /**
      * 获取map-json
-     *
-     * @return JsonResult<Map<String, Object>>
      */
     @RequestMapping("/json/getMapJson")
     public Response<Map<String, Object>> getMapJson() {

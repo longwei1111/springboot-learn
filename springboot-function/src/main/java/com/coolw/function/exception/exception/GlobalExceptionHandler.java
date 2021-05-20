@@ -22,9 +22,6 @@ public class GlobalExceptionHandler {
 
     /**
      * 缺少请求参数异常处理
-     *
-     * @param ex HttpMessageNotReadableException
-     * @return ResultResponse
      */
     @ExceptionHandler(MissingServletRequestParameterException.class)
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
@@ -35,9 +32,6 @@ public class GlobalExceptionHandler {
 
     /**
      * 空指针异常处理
-     *
-     * @param ex NullPointerException
-     * @return ResultResponse
      */
     @ExceptionHandler(NullPointerException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
@@ -48,9 +42,6 @@ public class GlobalExceptionHandler {
 
     /**
      * 自定义业务异常处理
-     *
-     * @param businessException
-     * @return ResultResponse
      */
     @ExceptionHandler(BusinessException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
@@ -63,9 +54,6 @@ public class GlobalExceptionHandler {
 
     /**
      * 系统异常,预期以外异常
-     *
-     * @param ex Exception
-     * @return ResultResponse
      */
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)

@@ -36,8 +36,6 @@ public class AsyncTaskPoolConfig implements AsyncConfigurer {
 
     /**
      * 异步任务使用的线程池_1
-     *
-     * @return
      */
     @Bean("asyncExecutor1")
     public ThreadPoolTaskExecutor taskExecutor1() {
@@ -68,8 +66,6 @@ public class AsyncTaskPoolConfig implements AsyncConfigurer {
 
     /**
      * 异步任务使用的线程池_2
-     *
-     * @return
      */
     @Bean("asyncExecutor2")
     public ThreadPoolTaskExecutor taskExecutor2() {

@@ -21,8 +21,6 @@ public class TopicRabbitConfig {
 
     /**
      * 创建队列：topic.man
-     *
-     * @return
      */
     @Bean
     public Queue manQueue() {
@@ -31,8 +29,6 @@ public class TopicRabbitConfig {
 
     /**
      * 创建队列：topic.woman
-     *
-     * @return
      */
     @Bean
     public Queue womenQueue() {
@@ -41,8 +37,6 @@ public class TopicRabbitConfig {
 
     /**
      * 设置topic交换机名：topicExchange
-     *
-     * @return
      */
     @Bean
     public TopicExchange topicExchange() {
@@ -52,8 +46,6 @@ public class TopicRabbitConfig {
     /**
      * 将队列topic.man和交换机topicExchange绑定，路由键规则为topic.#
      * 消息携带的路由键是以topic.man,才会分发到该队列
-     *
-     * @return
      */
     @Bean
     public Binding bindingExchangeMessage() {
@@ -63,8 +55,6 @@ public class TopicRabbitConfig {
     /**
      * 将队列topic.woman和交换机topicExchange绑定，路由键规则为topic.#
      * 息携带的路由键是以topic.开头，都会分发到该队列
-     *
-     * @return
      */
     @Bean
     public Binding bindingExchangeMessage2() {

@@ -20,8 +20,6 @@ public class UserService {
 
     /**
      * 获取用户信息
-     *
-     * @return
      */
     public User getUser() {
         return new User(1, "zhangsan", "123456789");

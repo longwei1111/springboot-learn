@@ -17,8 +17,6 @@ public class DirectRabbitConfig {
 
     /**
      * 队列名为testDirectQueue，持久化
-     *
-     * @return
      */
     @Bean
     public Queue TestDirectQueue() {
@@ -27,8 +25,6 @@ public class DirectRabbitConfig {
 
     /**
      * 交换机名为testDirectExchange
-     *
-     * @return
      */
     @Bean
     DirectExchange TestDirectExchange() {
@@ -37,8 +33,6 @@ public class DirectRabbitConfig {
 
     /**
      * 创建一个独立的交换机：lonelyDirectExchange
-     *
-     * @return
      */
     @Bean
     public DirectExchange lonelyDirectExchange() {
@@ -47,8 +41,6 @@ public class DirectRabbitConfig {
 
     /**
      * 将队列和交换机绑定，并设置路由键：testDirectRouting
-     *
-     * @return
      */
     @Bean
     public Binding bindingDirect() {

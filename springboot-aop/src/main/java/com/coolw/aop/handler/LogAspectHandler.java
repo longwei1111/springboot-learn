@@ -55,8 +55,6 @@ public class LogAspectHandler {
 
     /**
      * 前置通知。@Before 注解指定的方法在切面切入目标方法之前执行
-     *
-     * @param joinPoint
      */
     @Before("pointcut()")
     public void doBefore(JoinPoint joinPoint) {
@@ -80,8 +78,6 @@ public class LogAspectHandler {
 
     /**
      * 最终通知。@After 注解指定的方法在切面切入目标方法之后执行
-     *
-     * @param joinPoint
      */
     @After("pointcut()")
     public void doAfter(JoinPoint joinPoint) {
@@ -97,9 +93,6 @@ public class LogAspectHandler {
     /**
      * 后置通知。@AfterReturning和@After 有些类似，区别在于 @AfterReturning 注解可以用来捕获切入方法执行完之后的返回值，
      * 对返回值进行业务逻辑上的增强处理
-     *
-     * @param joinPoint
-     * @param result
      */
     @AfterReturning(pointcut = "pointcut()", returning = "result")
     public void doAfterReturning(JoinPoint joinPoint, Object result) {
@@ -116,9 +109,6 @@ public class LogAspectHandler {
 
     /**
      * 异常通知。@AfterThrowing 注解是当被切方法执行时抛出异常时，会进入 @AfterThrowing 注解的方法中执行
-     *
-     * @param joinPoint
-     * @param ex
      */
     @AfterThrowing(pointcut = "pointcut()", throwing = "ex")
     public void doAfterThrowing(JoinPoint joinPoint, Exception ex) {
@@ -137,7 +127,7 @@ public class LogAspectHandler {
      * 必须抛出异常：throws Throwable
      */
     //@Around("pointcut()")
-    public Object test5(ProceedingJoinPoint pjp) throws Throwable {
+    public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
         try {
             log.info("----------- 前置通知");
 

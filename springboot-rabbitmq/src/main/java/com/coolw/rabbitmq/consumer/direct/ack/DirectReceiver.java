@@ -46,9 +46,6 @@ public class DirectReceiver implements ChannelAwareMessageListener {
 
     /**
      * {key=value,key=value,key=value} 格式转换成 map
-     *
-     * @param str
-     * @return
      */
     private Map<String, String> mapStringToMap(String str) {
         str = str.substring(1, str.length() - 1);

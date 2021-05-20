@@ -23,9 +23,6 @@ public class RedisService {
     /**  redis:String 类型========================================start */
     /**
      * set redis : String类型
-     *
-     * @param key
-     * @param value
      */
     public void setString(String key, String value) {
         ValueOperations<String, String> valueOperations = stringRedisTemplate.opsForValue();
@@ -34,9 +31,6 @@ public class RedisService {
 
     /**
      * get redis : String类型
-     *
-     * @param key
-     * @return
      */
     public String getString(String key) {
         return stringRedisTemplate.opsForValue().get(key);
@@ -46,10 +40,6 @@ public class RedisService {
     /**  redis:Hash 类型========================================start */
     /**
      * set redis: hash类型
-     *
-     * @param key
-     * @param filedKey
-     * @param value
      */
     public void setHash(String key, String filedKey, String value) {
         HashOperations<String, Object, Object> hashOperations = stringRedisTemplate.opsForHash();
@@ -58,10 +48,6 @@ public class RedisService {
 
     /**
      * get redis: hash类型
-     *
-     * @param key
-     * @param filedKey
-     * @return
      */
     public String getHash(String key, String filedKey) {
         return (String) stringRedisTemplate.opsForHash().get(key, filedKey);
@@ -72,9 +58,6 @@ public class RedisService {
     /**  redis:List 类型========================================start */
     /**
      * set redis: List类型
-     *
-     * @param key
-     * @param value
      */
     public long setList(String key, String value){
         ListOperations<String, String> listOperations = stringRedisTemplate.opsForList();
@@ -83,11 +66,6 @@ public class RedisService {
 
     /**
      * get redis:list类型
-     *
-     * @param key
-     * @param start
-     * @param end
-     * @return
      */
     public List<String> getList(String key, long start, long end) {
         return stringRedisTemplate.opsForList().range(key, start, end);

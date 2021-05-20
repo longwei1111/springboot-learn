@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 import java.sql.SQLException;
 
 /**
- * @Description Spring Boot 默认的事务规则是遇到运行异常（RuntimeException）和程序错误（Error）才会回滚
+ * @Description Spring Boot 默认的事务规则是遇到运行异常（RuntimeException）或 程序错误（Error）才会回滚
  * @Author coolw
  * @Date 2020-02-25 11:36
  */
@@ -20,13 +20,10 @@ import java.sql.SQLException;
 public class UserServiceImpl implements UserService {
 
     @Resource
-    UserMapper userMapper;
+    private UserMapper userMapper;
 
     /**
      * RuntimeException异常被捕获到，事务回滚
-     *
-     * @param user
-     * @return
      */
     @Override
     @Transactional
@@ -43,9 +40,6 @@ public class UserServiceImpl implements UserService {
 
     /**
      * 常见问题1：SQLException异常没有被捕获到，事务不回滚
-     *
-     * @param user
-     * @return
      */
     @Override
     @Transactional
@@ -62,9 +56,6 @@ public class UserServiceImpl implements UserService {
 
     /**
      * 常见问题2：异常被吃掉
-     *
-     * @param user
-     * @return
      */
     @Override
     @Transactional
@@ -86,9 +77,6 @@ public class UserServiceImpl implements UserService {
 
     /**
      * 常见问题3：事务的范围。事务的范围比锁的范围大，可能导致数据不正确
-     *
-     * @param user
-     * @return
      */
     @Override
     @Transactional(rollbackFor = Exception.class)

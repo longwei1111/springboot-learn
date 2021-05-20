@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.coolw.mybatis.dao.UserDao">
-    <insert id="insert" parameterType="user">
-        insert into coo_user
-            (
-                user_no, user_name, password, mobile_no, address
-                <if test="userStatus != null">
-                    , user_status
-                </if>
-            )
-        values
-            (
-                #{userNo,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}
-                , #{mobileNo,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}
-                <if test="userStatus != null">
-                    , #{userStatus,jdbcType=CHAR}
-                </if>
-            )
-    </insert>
-
     <resultMap id="Base_Result_Map" type="user">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <result column="user_no" property="userNo" jdbcType="VARCHAR"/>
@@ -35,21 +17,33 @@
         id, user_no, user_name, password, mobile_no, address, user_status, crt_time, upt_time
     </sql>
 
+    <insert id="insert" parameterType="user">
+        insert into coo_user
+        (
+            user_no, user_name, password, mobile_no, address
+            <if test="userStatus != null">
+                , user_status
+            </if>
+        )
+        values
+        (
+            #{userNo,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}
+            , #{mobileNo,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}
+            <if test="userStatus != null">
+                , #{userStatus,jdbcType=CHAR}
+            </if>
+        )
+    </insert>
+
     <select id="getListByUserName" parameterType="String" resultMap="Base_Result_Map">
-        select
-            <include refid="Base_Columns"/>
-        from
-            coo_user
-        where
-            user_name = #{name}
+        select <include refid="Base_Columns"/>
+        from coo_user
+        where user_name = #{name}
     </select>
 
     <update id="updateUserStatusByUserNo" parameterType="String">
-        update
-            coo_user
-        set
-            user_status = #{userStatus,jdbcType=CHAR}
-        where
-            user_no = #{userNo,jdbcType=VARCHAR}
+        update coo_user
+        set user_status = #{userStatus,jdbcType=CHAR}
+        where user_no = #{userNo,jdbcType=VARCHAR}
     </update>
 </mapper>
