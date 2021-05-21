@@ -16,21 +16,14 @@ import java.util.concurrent.ThreadPoolExecutor;
 @Configuration
 public class AsyncTaskPoolConfig implements AsyncConfigurer {
 
-//    @Resource
-//    private Environment environment;
-
     @Value("${spring.task.execution.pool.core-size}")
     private int corePoolSize;
-
     @Value("${spring.task.execution.pool.max-size}")
     private int mxPoolSize;
-
     @Value("${spring.task.execution.pool.queue-capacity}")
     private int queueCapacity;
-
     @Value("${spring.task.execution.pool.keep-alive}")
     private int keepAliveSeconds;
-
     @Value("${spring.task.execution.thread-name-prefix}")
     private String threadNamePrefix;
 
