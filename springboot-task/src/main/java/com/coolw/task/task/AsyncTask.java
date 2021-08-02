@@ -5,9 +5,8 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 /**
- * @Classname AsyncTask
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-27 21:32
  */
 @Slf4j

@@ -3,9 +3,8 @@ package com.coolw.cache.service;
 import com.coolw.cache.entity.User;
 
 /**
- * @Classname UserService
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-03-05 15:51
  */
 public interface UserService {

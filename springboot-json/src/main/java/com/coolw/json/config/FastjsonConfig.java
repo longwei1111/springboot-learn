@@ -13,9 +13,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 //import java.util.List;
 
 /**
- * @Classname FastjsonConfig
  * @Description fastjson配置，数据转换
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-22 17:52
  */
 //@Configuration

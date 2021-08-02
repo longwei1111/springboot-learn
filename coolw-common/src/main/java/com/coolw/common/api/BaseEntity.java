@@ -6,10 +6,9 @@ import lombok.Setter;
 import java.util.Date;
 
 /**
- * @Classname BaseEntity
  * @Description
  * @Date 2021/1/19 10:46
- * @Author lw
+ * @Author coolw
  */
 @Getter
 @Setter

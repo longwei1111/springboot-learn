@@ -8,9 +8,8 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 
 /**
- * @Classname UserService
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 14:45
  */
 @Service
@@ -21,8 +20,6 @@ public class UserService {
 
     /**
      * 获取用户信息
-     *
-     * @return
      */
     public User getUser() {
         return new User(1, "zhangsan", "123456789");

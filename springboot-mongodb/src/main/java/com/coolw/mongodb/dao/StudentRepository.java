@@ -6,9 +6,8 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * @Classname StudentRepository
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-27 15:55
  */
 @Repository

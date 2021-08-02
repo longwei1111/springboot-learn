@@ -11,9 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 /**
- * @Classname UserController
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-03-05 16:31
  */
 @Slf4j

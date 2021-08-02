@@ -3,9 +3,8 @@ package com.coolw.cache.dao;
 import com.coolw.cache.entity.User;
 
 /**
- * @Classname UserMapper
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-03-05 15:51
  */
 public interface UserMapper {

@@ -8,9 +8,8 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 /**
- * @Classname TopicWomanConsumer
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-26 15:00
  */
 @Slf4j

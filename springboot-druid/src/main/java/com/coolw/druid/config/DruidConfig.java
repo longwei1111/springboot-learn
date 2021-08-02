@@ -14,9 +14,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Classname DruidConfig
  * @Description 注解初始化DataSource
- * @Author lw
+ * @Author coolw
  * @Date 2019-12-20 13:34
  */
 @Configuration
@@ -24,8 +23,6 @@ public class DruidConfig {
 
     /**
      * Druid配置
-     *
-     * @return DataSource
      */
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
@@ -36,8 +33,6 @@ public class DruidConfig {
 
     /**
      * 注册Servlet
-     *
-     * @return ServletRegistrationBean
      */
     @Bean
     public ServletRegistrationBean statViewServlet(){
@@ -58,8 +53,6 @@ public class DruidConfig {
 
     /**
      * 注册Filter
-     *
-     * @return FilterRegistrationBean
      */
     @Bean
     public FilterRegistrationBean druidStatFilter(){

@@ -8,9 +8,8 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 /**
- * @Classname FanoutConsumerC
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-26 15:22
  */
 @Slf4j

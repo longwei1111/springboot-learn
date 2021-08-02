@@ -7,9 +7,8 @@ import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
 /**
- * @Classname MyHttpSessionListener
  * @Description 使用HttpSessionListener统计在线用户数的监听器
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 14:56
  */
 @Slf4j

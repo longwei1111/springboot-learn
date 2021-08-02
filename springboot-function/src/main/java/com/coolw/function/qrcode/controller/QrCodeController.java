@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 /**
- * @Classname QrCodeController
  * @Description
  * @Date 2021/4/9 13:55
- * @Author lw
+ * @Author coolw
  */
 @RestController
 public class QrCodeController {

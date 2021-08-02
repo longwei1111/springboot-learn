@@ -3,9 +3,8 @@ package com.coolw.transaction.service;
 import com.coolw.transaction.entity.User;
 
 /**
- * @Classname UserService
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 11:36
  */
 public interface UserService {

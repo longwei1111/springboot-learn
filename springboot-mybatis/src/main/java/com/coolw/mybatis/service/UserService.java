@@ -5,9 +5,8 @@ import com.coolw.mybatis.entity.User;
 import java.util.List;
 
 /**
- * @Classname UserService
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-03-05 15:51
  */
 public interface UserService {

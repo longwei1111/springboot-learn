@@ -9,9 +9,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * @Classname MyTimeTask
  * @Description 定时任务
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-27 21:10
  */
 @Slf4j

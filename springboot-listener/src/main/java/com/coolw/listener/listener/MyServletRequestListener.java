@@ -8,9 +8,8 @@ import javax.servlet.ServletRequestListener;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @Classname MyServletRequestListener
  * @Description 使用ServletRequestListener获取访问信息
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 15:45
  */
 @Slf4j

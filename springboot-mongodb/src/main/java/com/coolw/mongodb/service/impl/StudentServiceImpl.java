@@ -11,9 +11,8 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * @Classname StudentServiceImpl
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-27 16:00
  */
 @Slf4j
@@ -21,13 +20,10 @@ import java.util.Objects;
 public class StudentServiceImpl implements StudentService {
 
     @Resource
-    StudentRepository studentRepository;
+    private StudentRepository studentRepository;
 
     /**
      * 添加学生信息
-     *
-     * @param student
-     * @return
      */
     @Override
     public Student addStudent(Student student) {
@@ -36,9 +32,6 @@ public class StudentServiceImpl implements StudentService {
 
     /**
      * 删除学生信息
-     *
-     * @param id
-     * @return
      */
     @Override
     public void deleteStudentById(long id) {
@@ -52,9 +45,6 @@ public class StudentServiceImpl implements StudentService {
 
     /**
      * 更新学生信息
-     *
-     * @param student
-     * @return
      */
     @Override
     public Student updateStudent(Student student) {
@@ -72,9 +62,6 @@ public class StudentServiceImpl implements StudentService {
 
     /**
      * 根据id查询学生信息
-     *
-     * @param id
-     * @return
      */
     @Override
     public Student findStudentById(long id) {
@@ -83,8 +70,6 @@ public class StudentServiceImpl implements StudentService {
 
     /**
      * 获取学生信息列表
-     *
-     * @return
      */
     @Override
     public List<Student> findAllStudent() {

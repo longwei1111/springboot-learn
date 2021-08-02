@@ -3,9 +3,8 @@ package com.coolw.function.exception.exception;
 import com.coolw.function.exception.enums.BusinessMsgEnum;
 
 /**
- * @Classname BusinessException
  * @Description 自定义异常
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-24 17:16
  */
 public class BusinessException extends RuntimeException {

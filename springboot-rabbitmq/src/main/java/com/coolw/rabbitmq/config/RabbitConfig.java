@@ -9,9 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Classname RabbitConfig
  * @Description 生产者推送消息的消息确认 回调函数
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-26 15:28
  */
 @Slf4j

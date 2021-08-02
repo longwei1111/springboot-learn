@@ -1,6 +1,6 @@
 package com.coolw.json.controller;
 
-import com.coolw.common.api.ResultResponse;
+import com.coolw.common.api.Response;
 import com.coolw.json.entity.Cust;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,21 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 import java.math.BigDecimal;
 
 /**
- * @Classname CustController
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-08-14 20:45
  */
 @RestController
 public class CustController {
 
     @GetMapping("/cust/getCust")
-    public ResultResponse getCust() {
+    public Response getCust() {
         Cust cust = new Cust();
         cust.setCustName("张三");
         cust.setIdNo("430623194444444448888");
         cust.setIdType("1");
         cust.setMoney(new BigDecimal("100.00"));
-        return new ResultResponse().success(cust);
+        return new Response().success(cust);
     }
 }

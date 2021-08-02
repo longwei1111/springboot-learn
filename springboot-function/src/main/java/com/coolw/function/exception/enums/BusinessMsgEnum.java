@@ -1,9 +1,8 @@
 package com.coolw.function.exception.enums;
 
 /**
- * @Classname BusinessMsgEnum
  * @Description 业务异常提示信息枚举类
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-24 17:10
  */
 public enum BusinessMsgEnum {

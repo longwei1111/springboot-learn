@@ -5,9 +5,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
- * @Classname MicroUrlService
  * @Description ConfigurationProperties可以批量注入属性值
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-22 19:14
  */
 @Data

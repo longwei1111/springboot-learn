@@ -11,9 +11,8 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @Classname RedisController
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 21:01
  */
 @Slf4j

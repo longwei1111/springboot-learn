@@ -4,10 +4,9 @@ import com.coolw.common.api.ResponseService;
 import lombok.AllArgsConstructor;
 
 /**
- * @Classname ErrCodeEnum
  * @Description 错误码枚举定义
  * @Date 2021/1/19 10:23
- * @Author lw
+ * @Author coolw
  */
 @AllArgsConstructor
 public enum ErrCodeEnum implements ResponseService {

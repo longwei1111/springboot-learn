@@ -1,6 +1,6 @@
 package com.coolw.function.exception.controller;
 
-import com.coolw.common.api.ResultResponse;
+import com.coolw.common.api.Response;
 import com.coolw.function.exception.enums.BusinessMsgEnum;
 import com.coolw.function.exception.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
@@ -10,9 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Classname ExceptionController
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-24 15:37
  */
 @Slf4j
@@ -20,26 +19,26 @@ import org.springframework.web.bind.annotation.RestController;
 public class ExceptionController {
 
     @PostMapping("/exception/test")
-    public ResultResponse test(@RequestParam("name") String name, @RequestParam("pass") String pass) {
+    public Response test(@RequestParam("name") String name, @RequestParam("pass") String pass) {
         log.info("name={}", name);
         log.info("pass={}", pass);
-        return new ResultResponse().success();
+        return new Response().success();
     }
 
     @GetMapping("/exception/testNpe")
-    public ResultResponse testNullPointerException() {
+    public Response testNullPointerException() {
         String name = null;
         log.info("name长度= {}", name.length());
-        return new ResultResponse().success();
+        return new Response().success();
     }
 
     @GetMapping("/exception/business")
-    public ResultResponse testBusinessException() {
+    public Response testBusinessException() {
         try {
             int i = 1 / 0;
         } catch (Exception e) {
             throw new BusinessException(BusinessMsgEnum.UNEXPECTED_EXCEPTION);
         }
-        return new ResultResponse().success();
+        return new Response().success();
     }
 }

@@ -11,9 +11,8 @@ import org.springframework.context.annotation.Configuration;
 import javax.annotation.Resource;
 
 /**
- * @Classname MessageListenerConfig
  * @Description 消费者接收消息确认配置
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-26 16:34
  */
 @Configuration

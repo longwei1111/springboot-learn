@@ -12,9 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 
 /**
- * @Classname MyInterceptor
  * @Description 自定义拦截器
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-25 19:45
  */
 @Slf4j

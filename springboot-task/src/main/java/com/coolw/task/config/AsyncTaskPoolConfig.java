@@ -9,36 +9,26 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * @Classname AsyncTaskPoolConfig
  * @Description 异步任务-线程池配置
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-27 21:26
  */
 @Configuration
 public class AsyncTaskPoolConfig implements AsyncConfigurer {
 
-//    @Resource
-//    private Environment environment;
-
     @Value("${spring.task.execution.pool.core-size}")
     private int corePoolSize;
-
     @Value("${spring.task.execution.pool.max-size}")
     private int mxPoolSize;
-
     @Value("${spring.task.execution.pool.queue-capacity}")
     private int queueCapacity;
-
     @Value("${spring.task.execution.pool.keep-alive}")
     private int keepAliveSeconds;
-
     @Value("${spring.task.execution.thread-name-prefix}")
     private String threadNamePrefix;
 
     /**
      * 异步任务使用的线程池_1
-     *
-     * @return
      */
     @Bean("asyncExecutor1")
     public ThreadPoolTaskExecutor taskExecutor1() {
@@ -69,8 +59,6 @@ public class AsyncTaskPoolConfig implements AsyncConfigurer {
 
     /**
      * 异步任务使用的线程池_2
-     *
-     * @return
      */
     @Bean("asyncExecutor2")
     public ThreadPoolTaskExecutor taskExecutor2() {

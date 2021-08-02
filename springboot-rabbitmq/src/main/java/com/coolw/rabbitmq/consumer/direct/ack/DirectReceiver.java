@@ -11,9 +11,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Classname DirectReceiver
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-02-26 16:41
  */
 @Slf4j
@@ -47,9 +46,6 @@ public class DirectReceiver implements ChannelAwareMessageListener {
 
     /**
      * {key=value,key=value,key=value} 格式转换成 map
-     *
-     * @param str
-     * @return
      */
     private Map<String, String> mapStringToMap(String str) {
         str = str.substring(1, str.length() - 1);

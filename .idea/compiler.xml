@@ -7,23 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-cache" />
-        <module name="springboot-mongodb" />
+        <module name="springboot-interceptor" />
         <module name="springboot-actuator" />
+        <module name="springboot-cache" />
         <module name="springboot-aop" />
         <module name="coolw-common" />
         <module name="springboot-json" />
         <module name="springboot-rabbitmq" />
-        <module name="springboot-interceptor" />
+        <module name="springboot-mongodb" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-log4j2" />
         <module name="springboot-listener" />
+        <module name="springboot-task" />
         <module name="springboot-mybatisplus" />
-        <module name="springboot-druid" />
         <module name="springboot-mybatis" />
         <module name="springboot-transaction" />
+        <module name="springboot-druid" />
         <module name="springboot-function" />
-        <module name="springboot-task" />
         <module name="springboot-redis" />
       </profile>
     </annotationProcessing>

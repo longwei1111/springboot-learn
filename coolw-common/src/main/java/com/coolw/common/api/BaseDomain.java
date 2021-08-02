@@ -5,10 +5,9 @@ import com.alibaba.fastjson.JSONObject;
 import java.io.Serializable;
 
 /**
- * @Classname BaseDomain
  * @Description
  * @Date 2021/1/19 10:07
- * @Author lw
+ * @Author coolw
  */
 public class BaseDomain implements Serializable {
 

@@ -6,9 +6,8 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 /**
- * @Classname UserDao
  * @Description
- * @Author lw
+ * @Author coolw
  * @Date 2020-03-05 15:51
  */
 public interface UserDao {
@@ -25,10 +24,6 @@ public interface UserDao {
 
     /**
      * 使用注解和xml结合。根据主键id和姓名获取用户信息
-     *
-     * @param id
-     * @param userName
-     * @return UserEntity
      */
     @Select("select * from coo_user where id = #{id} and user_name = #{userName}")
     @ResultMap("Base_Result_Map")
@@ -36,9 +31,6 @@ public interface UserDao {
 
     /**
      * 使用注解，结果映射。根据主键id获取用户信息
-     *
-     * @param id
-     * @return UserEntity
      */
     @Select("select * from coo_user where id = #{id}")
     @Results({
