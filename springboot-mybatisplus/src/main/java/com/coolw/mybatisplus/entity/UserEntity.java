@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import javax.validation.constraints.NotEmpty;
 import java.util.Date;
 
 /**
@@ -23,6 +24,7 @@ public class UserEntity {
     private Integer id;
 
     @TableField(value = "id_card")
+    @NotEmpty(message = "身份证号不能为空")
     private String idCard;
 
     @TableField(value = "user_name")
