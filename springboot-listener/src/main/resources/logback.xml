@@ -2,10 +2,17 @@
 <configuration>
 
     <!-- 格式化输出：%date表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %m：日志消息，%n是换行符-->
-    <property name="LOG_PATTERN" value="%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}:%line - %m%n"/>
+    <!--<property name="LOG_PATTERN" value="%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}:%line - %m%n"/>-->
+
+    <!-- 彩色日志依赖的渲染类 -->
+    <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter" />
+    <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter" />
+    <conversionRule conversionWord="wEx" converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter" />
+    <!-- 彩色日志格式 -->
+    <property name="LOG_PATTERN" value="${CONSOLE:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
 
     <!-- 定义日志存储的路径，不要配置相对路径 -->
-    <property name="FILE_PATH" value="D:/logs/rabbitmq.%d{yyyy-MM-dd}.%i.log"/>
+    <property name="FILE_PATH" value="D:/logs/listener.%d{yyyy-MM-dd}.%i.log"/>
 
     <!-- 控制台输出日志 -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
@@ -33,7 +40,7 @@
         </encoder>
     </appender>
     <!-- project default level -->
-    <logger name="com.coolw.rabbitmq" level="INFO"/>
+    <logger name="com.coolw.listener" level="INFO"/>
 
     <!-- 日志输出级别 -->
     <root level="INFO">
