@@ -16,7 +16,7 @@
     </sql>
 
     <select id="queryPage"
-            parameterType="com.coolw.mybatisplus.dto.UserReportReq"
+            parameterType="com.coolw.mybatisplus.domain.req.UserReportReq"
             resultType="com.coolw.mybatisplus.entity.UserEntity">
         select <include refid="BaseColumn"/>
         from user

@@ -1,32 +1,36 @@
-package com.coolw.mybatisplus.entity;
+package com.coolw.mybatisplus.domain.req;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.coolw.common.api.BaseDomain;
 import com.coolw.mybatisplus.sensitive.annotation.SensitiveData;
 import com.coolw.mybatisplus.sensitive.annotation.SensitiveField;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.validation.constraints.NotEmpty;
 
 /**
- * 用户实体类
+ * TODO
  *
  * @author coolw
- * @date 2021/12/21 13:13
+ * @date 2022/7/1 15:39
  * @since 1.0
  */
 @SensitiveData
-@TableName(value = "user")
-@Data
-public class UserEntity extends BaseEntity {
+@Getter
+@Setter
+public class UserSaveReq extends BaseDomain {
 
-    @TableField(value = "id_card")
+    private static final long serialVersionUID = 4261283428149166940L;
+
     @NotEmpty(message = "身份证号不能为空")
     private String idCard;
 
     @TableField(value = "user_name")
     private String userName;
-    
+
     @SensitiveField
     private String password;
 

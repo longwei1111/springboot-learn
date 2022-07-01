@@ -3,12 +3,14 @@ package com.coolw.mybatisplus.controller;
 import cn.hutool.core.date.DatePattern;
 import cn.hutool.core.date.DateUtil;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.coolw.mybatisplus.dto.UserExcel;
-import com.coolw.mybatisplus.dto.UserReportReq;
+import com.coolw.mybatisplus.domain.excel.UserExcel;
+import com.coolw.mybatisplus.domain.req.UserReportReq;
+import com.coolw.mybatisplus.domain.req.UserSaveReq;
 import com.coolw.mybatisplus.entity.UserEntity;
 import com.coolw.mybatisplus.service.UserService;
 import com.coolw.mybatisplus.util.ExcelUtils;
 import com.coolw.mybatisplus.util.PageResult;
+import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -32,12 +34,14 @@ public class UserController {
     @Resource
     private UserService userService;
 
-    @PostMapping("/add")
-    public boolean add(@RequestBody UserEntity entity) {
-        return userService.save(entity);
+    @PostMapping("/save")
+    public boolean save(@RequestBody UserSaveReq req) {
+        UserEntity user = new UserEntity();
+        BeanUtils.copyProperties(req, user);
+        return userService.save(user);
     }
 
-    @GetMapping("/list")
+    @GetMapping("/listAll")
     public List<UserEntity> list() {
         return userService.list();
     }
@@ -47,6 +51,11 @@ public class UserController {
         return userService.list(Wrappers.<UserEntity>lambdaQuery().eq(UserEntity::getUserName, userName));
     }
 
+    @GetMapping("/{id}")
+    public UserEntity getUserById(@PathVariable String id) {
+        return userService.getById(id);
+    }
+    
     @PostMapping("/pageList")
     public PageResult<UserEntity> pageList(@RequestBody UserReportReq req) {
         return userService.pageList(req);

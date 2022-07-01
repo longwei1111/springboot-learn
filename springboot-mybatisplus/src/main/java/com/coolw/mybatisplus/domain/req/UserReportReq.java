@@ -1,4 +1,4 @@
-package com.coolw.mybatisplus.dto;
+package com.coolw.mybatisplus.domain.req;
 
 import com.coolw.mybatisplus.util.PageRequest;
 import lombok.Data;

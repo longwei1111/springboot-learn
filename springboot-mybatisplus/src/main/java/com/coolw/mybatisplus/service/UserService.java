@@ -1,8 +1,8 @@
 package com.coolw.mybatisplus.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.coolw.mybatisplus.dto.UserExcel;
-import com.coolw.mybatisplus.dto.UserReportReq;
+import com.coolw.mybatisplus.domain.excel.UserExcel;
+import com.coolw.mybatisplus.domain.req.UserReportReq;
 import com.coolw.mybatisplus.entity.UserEntity;
 import com.coolw.mybatisplus.util.PageResult;
 

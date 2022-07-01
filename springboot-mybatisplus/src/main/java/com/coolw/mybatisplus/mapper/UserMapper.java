@@ -2,9 +2,11 @@ package com.coolw.mybatisplus.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.coolw.mybatisplus.dto.UserReportReq;
+import com.coolw.mybatisplus.domain.req.UserReportReq;
 import com.coolw.mybatisplus.entity.UserEntity;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * TODO
@@ -23,4 +25,5 @@ public interface UserMapper extends BaseMapper<UserEntity> {
      * @return
      */
     IPage<UserEntity> queryPage(IPage<UserEntity> page, @Param("req") UserReportReq req);
+    
 }
