@@ -1,6 +1,6 @@
 package com.coolw.mybatis.service;
 
-import com.coolw.mybatis.entity.User;
+import com.coolw.mybatis.entity.UserEntity;
 
 import java.util.List;
 
@@ -11,13 +11,13 @@ import java.util.List;
  */
 public interface UserService {
 
-    int addUser(User user);
+    int addUser(UserEntity user);
 
-    List<User> getUserListByUserName(String userName);
+    List<UserEntity> getUserListByUserName(String userName);
 
-    User getUserById(long id);
+    UserEntity getUserById(long id);
 
-    User getUserByIdAndUserName(long id, String userName);
+    UserEntity getUserByIdAndUserName(long id, String userName);
 
     int updateUserStatusByUserNo(String userNo, String userStatus);
 }

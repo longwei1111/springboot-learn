@@ -6,7 +6,7 @@ import lombok.Setter;
 import java.util.Date;
 
 /**
- * @Description
+ * @Description 实体基类
  * @Date 2021/1/19 10:46
  * @Author coolw
  */
@@ -16,7 +16,7 @@ public class BaseEntity extends BaseDomain {
 
     private static final long serialVersionUID = -8720665848011608399L;
 
-    private long id;
+    private Long id;
     private Date crtTime;
     private Date uptTime;
 }

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.coolw.mybatisplus.domain.req.UserReportReq;
 import com.coolw.mybatisplus.entity.UserEntity;
+import org.apache.ibatis.annotations.CacheNamespace;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -15,6 +16,8 @@ import java.util.List;
  * @date 2021/12/21 13:18
  * @since 1.0
  */
+// 开启MyBatis二级缓存
+@CacheNamespace
 public interface UserMapper extends BaseMapper<UserEntity> {
 
     /**

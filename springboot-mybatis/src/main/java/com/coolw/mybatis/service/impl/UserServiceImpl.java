@@ -1,7 +1,7 @@
 package com.coolw.mybatis.service.impl;
 
 import com.coolw.mybatis.dao.UserDao;
-import com.coolw.mybatis.entity.User;
+import com.coolw.mybatis.entity.UserEntity;
 import com.coolw.mybatis.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -22,25 +22,25 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
-    public int addUser(User user) {
+    public int addUser(UserEntity user) {
         log.info("新增客户信息 user={}", user);
         return userDao.insert(user);
     }
 
     @Override
-    public List<User> getUserListByUserName(String userName) {
+    public List<UserEntity> getUserListByUserName(String userName) {
         log.info("根据客户名称获取客户信息 userName={}", userName);
         return userDao.getListByUserName(userName);
     }
 
     @Override
-    public User getUserByIdAndUserName(long id, String userName) {
+    public UserEntity getUserByIdAndUserName(long id, String userName) {
         log.info("根据主键id和客户姓名获取客户信息 id={},userName={}", id, userName);
         return userDao.getUserByIdAndUserName(id, userName);
     }
 
     @Override
-    public User getUserById(long id) {
+    public UserEntity getUserById(long id) {
         log.info("根据主键id获取客户信息 id={}", id);
         return userDao.getUserById(id);
     }

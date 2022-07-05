@@ -20,6 +20,8 @@ import javax.validation.constraints.NotEmpty;
 @Data
 public class UserEntity extends BaseEntity {
 
+    private static final long serialVersionUID = 3473309747286006030L;
+    
     @TableField(value = "id_card")
     @NotEmpty(message = "身份证号不能为空")
     private String idCard;

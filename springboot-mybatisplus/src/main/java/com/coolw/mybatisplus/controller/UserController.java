@@ -7,13 +7,16 @@ import com.coolw.mybatisplus.domain.excel.UserExcel;
 import com.coolw.mybatisplus.domain.req.UserReportReq;
 import com.coolw.mybatisplus.domain.req.UserSaveReq;
 import com.coolw.mybatisplus.entity.UserEntity;
+import com.coolw.mybatisplus.mapper.UserMapper;
 import com.coolw.mybatisplus.service.UserService;
 import com.coolw.mybatisplus.util.ExcelUtils;
 import com.coolw.mybatisplus.util.PageResult;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -31,8 +34,13 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    @Resource
+    @Autowired
     private UserService userService;
+    @Autowired
+    private UserMapper userMapper;
+    
+    @Autowired
+    private SqlSessionFactory sqlSessionFactory;
 
     @PostMapping("/save")
     public boolean save(@RequestBody UserSaveReq req) {
@@ -53,7 +61,20 @@ public class UserController {
 
     @GetMapping("/{id}")
     public UserEntity getUserById(@PathVariable String id) {
-        return userService.getById(id);
+        
+        // 一级缓存，默认开启，作用于同一个sqlSession中
+        /*SqlSession sqlSession = sqlSessionFactory.openSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        userMapper.selectById(id);
+        userMapper.selectById(id);
+        userMapper.selectById(id);
+        */
+
+        // 二级缓存，需要手动开启，作用于同一个namespace中
+        userMapper.selectById(id);
+        userMapper.selectById(id);
+        userMapper.selectById(id);
+        return null;
     }
     
     @PostMapping("/pageList")
