@@ -71,7 +71,8 @@ public class LogAspectHandler {
         // 获取请求的url和ip
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
-        String url = request.getRequestURI();
+        //String uri = request.getRequestURI();
+        String url = request.getRequestURL().toString();
         String ip = request.getRemoteAddr();
         log.info("用户请求的url={},ip={}", url, ip);
     }
@@ -117,7 +118,7 @@ public class LogAspectHandler {
         // 获取执行的方法名
         String method = signature.getName();
         // 处理异常的逻辑
-        log.info("执行方法{}出错，异常为：{}", method, ex);
+        log.error("执行方法{}出错，异常为：", method, ex);
     }
 
     /**

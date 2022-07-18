@@ -34,11 +34,11 @@
 
         <!-- module:swagger start -->
         <!-- knife4j -->
-        <dependency>
+        <!--<dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-spring-boot-starter</artifactId>
             <version>3.0.2</version>
-        </dependency>
+        </dependency>-->
         <!-- swagger2 -->
         <!--<dependency>
             <groupId>io.springfox</groupId>

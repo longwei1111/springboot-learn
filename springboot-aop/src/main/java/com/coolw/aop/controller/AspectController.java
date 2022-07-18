@@ -23,6 +23,7 @@ public class AspectController {
 
     @GetMapping("/aop/{name}")
     public Response testAop(@PathVariable String name) {
+        int i = 1/0;
         return new Response().success("Hello " + name);
     }
 }

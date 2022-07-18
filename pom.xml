@@ -46,6 +46,8 @@
         <lombok.version>1.18.10</lombok.version>
         <mybatis.plus.version>3.3.0</mybatis.plus.version>
         <easyexcel.version>2.2.11</easyexcel.version>
+        <hutool.version>5.8.0</hutool.version>
+        <knife4j.version>3.0.2</knife4j.version>
     </properties>
 
     <dependencyManagement>
@@ -78,5 +80,25 @@
             <artifactId>hibernate-validator</artifactId>
             <version>6.0.18.Final</version> 
         </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-bom</artifactId>
+            <version>${hutool.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>${knife4j.version}</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox.swagger2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox.swagger2.version}</version>
+        </dependency>-->
     </dependencies>
 </project>
