@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/coolw-common/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-function/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybatisplus/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-kafka/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

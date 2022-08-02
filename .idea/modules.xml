@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-function/springboot-function.iml" filepath="$PROJECT_DIR$/springboot-function/springboot-function.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-interceptor/springboot-interceptor.iml" filepath="$PROJECT_DIR$/springboot-interceptor/springboot-interceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-json/springboot-json.iml" filepath="$PROJECT_DIR$/springboot-json/springboot-json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-kafka/springboot-kafka.iml" filepath="$PROJECT_DIR$/springboot-kafka/springboot-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-learn.iml" filepath="$PROJECT_DIR$/springboot-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-listener/springboot-listener.iml" filepath="$PROJECT_DIR$/springboot-listener/springboot-listener.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-log4j2/springboot-log4j2.iml" filepath="$PROJECT_DIR$/springboot-log4j2/springboot-log4j2.iml" />

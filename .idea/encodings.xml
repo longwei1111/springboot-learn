@@ -16,6 +16,8 @@
     <file url="file://$PROJECT_DIR$/springboot-interceptor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-json/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-json/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-kafka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-listener/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-listener/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-log4j2/src/main/java" charset="UTF-8" />

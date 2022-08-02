@@ -27,6 +27,7 @@
         <module>springboot-actuator</module>
         <module>springboot-mybatisplus</module>
         <module>springboot-function</module>
+        <module>springboot-kafka</module>
     </modules>
 
     <properties>

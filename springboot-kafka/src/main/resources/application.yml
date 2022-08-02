@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: KAFKA
+  kafka:
+    # kafka服务器地址
+    bootstrap-servers: 192.168.188.66:9092
+    # 生产者
+    producer:
+      # 重试次数
+      retries: 3
+      # 序列化
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    # 消费者  
+    consumer:
+      # 消息组ID
+      group-id: kafka-test
+      # 反序列化
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
