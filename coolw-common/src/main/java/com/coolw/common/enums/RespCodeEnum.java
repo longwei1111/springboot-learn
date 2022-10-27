@@ -9,21 +9,22 @@ import lombok.AllArgsConstructor;
  * @Author coolw
  */
 @AllArgsConstructor
-public enum ErrCodeEnum implements ResponseService {
+public enum RespCodeEnum implements ResponseService {
 
-    VALIDATTE_FAIL("500", "参数验证失败"),
-    SYS_FAIL("999", "系统内部错误");
+    SUCCESS("000000", "成功"),
+    VALIDATTE_FAIL("100000", "参数验证失败"),
+    FAIL("999999", "失败");
 
     private String code;
     private String msg;
 
     @Override
-    public String getResponseCode() {
+    public String getRespCode() {
         return code;
     }
 
     @Override
-    public String getResponseMessage() {
+    public String getRespMsg() {
         return msg;
     }
 }

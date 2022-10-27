@@ -1,6 +1,6 @@
 package com.coolw.function.swagger.controller;
 
-import com.coolw.common.api.Response;
+import com.coolw.common.api.BaseResponse;
 import com.coolw.function.swagger.entity.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -26,8 +26,8 @@ public class TestController {
 
     @GetMapping("/swagger/get/{id}")
     @ApiOperation(value = "根据用户唯一标识获取用户信息")
-    public Response<User> getUserInfo(@PathVariable @ApiParam(value = "用户唯一标识") Integer id) {
+    public BaseResponse<User> getUserInfo(@PathVariable @ApiParam(value = "用户唯一标识") Integer id) {
         User user = new User(id, "zhangsan", "123456");
-        return new Response().success(user);
+        return BaseResponse.success(user);
     }
 }

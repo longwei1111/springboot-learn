@@ -7,13 +7,7 @@ package com.coolw.common.api;
  */
 public interface ResponseService {
 
-    /**
-     * 响应代码
-     */
-    String getResponseCode();
+    String getRespCode();
 
-    /**
-     * 响应信息
-     */
-    String getResponseMessage();
+    String getRespMsg();
 }

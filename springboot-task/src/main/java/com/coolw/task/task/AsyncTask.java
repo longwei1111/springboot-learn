@@ -21,8 +21,9 @@ public class AsyncTask {
     public void asyncTask1() {
         try {
             // 具体业务逻辑处理
+            log.info("异步任务1处理......");
 
-            Thread.sleep(5000);
+            // Thread.sleep(5000);
         } catch (Exception e) {
             log.info("异步任务1：线程{}异常", Thread.currentThread().getName());
         }
@@ -36,8 +37,8 @@ public class AsyncTask {
     public void asyncTask2() {
         try {
             // 具体业务逻辑处理
-
-            Thread.sleep(5000);
+            log.info("异步任务2处理......");
+            // Thread.sleep(5000);
         } catch (Exception e) {
             log.info("异步任务2：线程{}异常", Thread.currentThread().getName());
         }

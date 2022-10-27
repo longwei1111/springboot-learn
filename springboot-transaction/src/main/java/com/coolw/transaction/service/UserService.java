@@ -11,9 +11,9 @@ public interface UserService {
 
     Integer insertUser(User user);
 
-    Integer insertUser_1(User user) throws Exception;
+    Integer insertUser1(User user) throws Exception;
 
-    Integer insertUser_2(User user);
+    Integer insertUser2(User user);
 
-    Integer insertUser_3(User user);
+    Integer insertUser3(User user);
 }

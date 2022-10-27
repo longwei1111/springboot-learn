@@ -7,6 +7,7 @@ import com.coolw.mybatisplus.sensitive.annotation.SensitiveField;
 import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
+import java.util.Map;
 
 /**
  * 用户实体类
@@ -35,4 +36,7 @@ public class UserEntity extends BaseEntity {
     private String mobile;
 
     private String address;
+    
+    @TableField(exist = false)
+    private Map<String, Object> extMap;
 }

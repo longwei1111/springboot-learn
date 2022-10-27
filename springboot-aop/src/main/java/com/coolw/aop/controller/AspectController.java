@@ -1,6 +1,6 @@
 package com.coolw.aop.controller;
 
-import com.coolw.common.api.Response;
+import com.coolw.common.api.BaseResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,14 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class AspectController {
 
     @GetMapping("/aop/test")
-    public Response test() {
+    public BaseResponse test() {
         log.info("===== /aop/test =====");
-        return new Response().success();
+        return BaseResponse.success();
     }
 
     @GetMapping("/aop/{name}")
-    public Response testAop(@PathVariable String name) {
+    public BaseResponse testAop(@PathVariable String name) {
         int i = 1/0;
-        return new Response().success("Hello " + name);
+        return BaseResponse.success("Hello " + name);
     }
 }

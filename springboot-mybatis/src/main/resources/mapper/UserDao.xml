@@ -6,33 +6,47 @@
         <result column="user_no" property="userNo" jdbcType="VARCHAR"/>
         <result column="user_name" property="userName" jdbcType="VARCHAR"/>
         <result column="password" property="password" jdbcType="VARCHAR"/>
-        <result column="mobile_no" property="mobileNo" jdbcType="VARCHAR"/>
+        <result column="mobile" property="mobile" jdbcType="VARCHAR"/>
         <result column="address" property="address" jdbcType="VARCHAR"/>
         <result column="user_status" property="userStatus" jdbcType="CHAR"/>
-        <result column="crt_time" property="crtTime" jdbcType="TIMESTAMP"/>
-        <result column="upt_time" property="uptTime" jdbcType="TIMESTAMP"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
     </resultMap>
 
     <sql id="Base_Columns">
-        id, user_no, user_name, password, mobile_no, address, user_status, crt_time, upt_time
+        id, user_no, user_name, password, mobile, address, user_status, create_time, update_time
     </sql>
 
-    <insert id="insert" parameterType="userEntity">
+    <insert id="save" parameterType="userEntity">
         insert into coo_user
         (
-            user_no, user_name, password, mobile_no, address
+            user_no, user_name, password, mobile, address
             <if test="userStatus != null">
                 , user_status
             </if>
         )
         values
         (
-            #{userNo,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}
-            , #{mobileNo,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}
+            #{userNo}, #{userName}, #{password}, #{mobile}, #{address}
             <if test="userStatus != null">
                 , #{userStatus,jdbcType=CHAR}
             </if>
         )
+        <!-- 返回id -->
+        <selectKey keyColumn="id" resultType="long" keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+    </insert>
+
+    <insert id="saveBatch">
+        insert into coo_user
+        (
+        user_no, user_name, password, mobile, address
+        )
+        values
+        <foreach collection="userList" item="item" separator=",">
+            (#{item.userNo}, #{item.userName}, #{item.password}, #{item.mobile}, #{item.address})
+        </foreach>
     </insert>
 
     <select id="getListByUserName" parameterType="String" resultMap="Base_Result_Map">
@@ -40,10 +54,22 @@
         from coo_user
         where user_name = #{name}
     </select>
+    
+    <select id="listByIds" resultMap="Base_Result_Map">
+        select <include refid="Base_Columns"/>
+        from coo_user
+        where id in
+        <foreach collection="ids" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="listAll" resultMap="Base_Result_Map">
+        select <include refid="Base_Columns"/>
+        from coo_user
+    </select>
 
     <update id="updateUserStatusByUserNo" parameterType="String">
-        update coo_user
-        set user_status = #{userStatus,jdbcType=CHAR}
-        where user_no = #{userNo,jdbcType=VARCHAR}
+        update coo_user set user_status = #{userStatus} where user_no = #{userNo}
     </update>
 </mapper>

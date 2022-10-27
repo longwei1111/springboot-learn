@@ -1,4 +1,4 @@
-package com.coolw.mybatis.domain.req;
+package com.coolw.mybatis.dto.req;
 
 import com.coolw.common.api.BaseDomain;
 import lombok.Getter;
@@ -15,7 +15,7 @@ import javax.validation.constraints.NotBlank;
  */
 @Getter
 @Setter
-public class UpdateStatusReq extends BaseDomain {
+public class UpdateUserStatusReq extends BaseDomain {
     
     private static final long serialVersionUID = -7046238452755150188L;
     

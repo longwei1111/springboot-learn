@@ -1,6 +1,6 @@
 package com.coolw.acutator.controller;
 
-import com.coolw.common.api.Response;
+import com.coolw.common.api.BaseResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthController {
 
     @GetMapping("/health/test")
-    public Response test() {
-        return new Response().success();
+    public BaseResponse test() {
+        return BaseResponse.success();
     }
 }

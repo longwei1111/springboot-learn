@@ -1,6 +1,6 @@
 package com.coolw.json.controller;
 
-import com.coolw.common.api.Response;
+import com.coolw.common.api.BaseResponse;
 import com.coolw.json.entity.Cust;
 import com.coolw.json.entity.User;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -60,33 +60,33 @@ public class UserController {
      * 获取实体对象-json
      */
     @RequestMapping("/json/userJson")
-    public Response<User> getUserJson() {
+    public BaseResponse<User> getUserJson() {
         User user = new User(1, "zhangsan", "123456");
-        return new Response().success(user);
+        return BaseResponse.success(user);
     }
 
     /**
      * 获取实体对象列表-json
      */
     @RequestMapping("/json/userListJson")
-    public Response<List<User>> getUserListJson() {
+    public BaseResponse<List<User>> getUserListJson() {
         List<User> userList = new ArrayList<>();
         userList.add(new User(2, "zhangsan", "123456"));
         userList.add(new User(2, "lisi", "123456"));
-        return new Response().success(userList);
+        return BaseResponse.success(userList);
     }
 
     /**
      * 获取map-json
      */
     @RequestMapping("/json/getMapJson")
-    public Response<Map<String, Object>> getMapJson() {
+    public BaseResponse<Map<String, Object>> getMapJson() {
         Map<String, Object> map = new HashMap<>();
         User user = new User(1, "zhangsan", "123456");
         map.put("用户信息", user);
         map.put("博客地址", "https://www.cnblogs.com/lwcode6/");
         map.put("住址", null);
-        return new Response().success(map);
+        return BaseResponse.success(map);
     }
 
     @GetMapping("/json/now")

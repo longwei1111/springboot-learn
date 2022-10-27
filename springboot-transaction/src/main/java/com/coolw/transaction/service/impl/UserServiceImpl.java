@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     @Transactional
-    public Integer insertUser_1(User user) throws Exception {
+    public Integer insertUser1(User user) throws Exception {
         log.info("新增用户信息，user={}", user);
 
         Integer count = userMapper.insertUser(user);
@@ -59,7 +59,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     @Transactional
-    public Integer insertUser_2(User user) {
+    public Integer insertUser2(User user) {
         log.info("新增用户信息，user={}", user);
 
         Integer count = 0;
@@ -80,7 +80,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     @Transactional(rollbackFor = Exception.class)
-    public synchronized Integer insertUser_3(User user) {
+    public synchronized Integer insertUser3(User user) {
         log.info("新增用户信息，user={}", user);
 
         // 具体的业务处理......

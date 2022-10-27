@@ -2,7 +2,7 @@ package com.coolw.kafka.controller;
 
 import cn.hutool.core.lang.UUID;
 import com.alibaba.fastjson.JSONObject;
-import com.coolw.common.api.Response;
+import com.coolw.common.api.BaseResponse;
 import com.coolw.kafka.dto.Message;
 import com.coolw.kafka.dto.UserSyncDTO;
 import lombok.extern.slf4j.Slf4j;
@@ -28,7 +28,7 @@ public class ProducerController {
     private KafkaTemplate<String, String> kafkaTemplate;
 
     @GetMapping("/sendHello")
-    public Response<String> sendHello() {
+    public BaseResponse<String> sendHello() {
         String messageIdd = UUID.fastUUID().toString();
         Message<String> message = new Message<>();
         message.setMessageId(messageIdd);
@@ -42,17 +42,17 @@ public class ProducerController {
         SendResult<String, String> result = future.get(3, TimeUnit.SECONDS);
         log.info("send result:{}", result.getProducerRecord().value());*/
 
-        return new Response<>().success("成功");
+        return BaseResponse.success("成功");
     }
 
     @GetMapping("/sendUser")
-    public Response<String> sendUser() {
+    public BaseResponse<String> sendUser() {
         UserSyncDTO dto = UserSyncDTO.builder()
                 .username("coolw")
                 .mobile("15000994425")
                 .address("上海市浦东新区xxxxxx")
                 .build();
         kafkaTemplate.send("hello-topic", JSONObject.toJSONString(dto));
-        return new Response<>().success("成功");
+        return BaseResponse.success("成功");
     }
 }

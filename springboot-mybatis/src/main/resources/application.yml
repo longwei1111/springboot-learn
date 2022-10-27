@@ -20,6 +20,9 @@ mybatis:
   mapper-locations: classpath:/mapper/*.xml
   # 指定实体类别名
   type-aliases-package: com.coolw.mybatis.entity
+  configuration:
+    # 下划线自动转驼峰
+    map-underscore-to-camel-case: true
 
 # sql日志级别
 logging:

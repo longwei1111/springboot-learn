@@ -20,7 +20,7 @@ import java.util.Map;
  */
 public class QRCodeGeneratorUtils {
 
-    public static void generateQRCodeImage(String text, int width, int height, String filePath) throws WriterException, IOException {
+    public static void generateQrCodeImage(String text, int width, int height, String filePath) throws WriterException, IOException {
         // 定义二维码参数
         Map<EncodeHintType, Object> hints = new HashMap<>();
         hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
@@ -31,7 +31,7 @@ public class QRCodeGeneratorUtils {
     }
 
     public static void main(String[] args) throws Exception {
-        generateQRCodeImage("龙伟牛逼......", 350, 350, "D:/QRTest.png");
+        generateQrCodeImage("龙伟牛逼......", 350, 350, "D:/QRTest.png");
     }
 
 }

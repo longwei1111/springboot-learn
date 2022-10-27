@@ -1,6 +1,6 @@
 package com.coolw.task.controller;
 
-import com.coolw.common.api.Response;
+import com.coolw.common.api.BaseResponse;
 import com.coolw.task.task.AsyncTask;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,10 +19,10 @@ public class AsyncController {
     private AsyncTask asyncTask;
 
     @GetMapping("/async/task")
-    public Response asyncTask() {
+    public BaseResponse asyncTask() {
         asyncTask.asyncTask1();
         asyncTask.asyncTask2();
-        return new Response().success();
+        return BaseResponse.success();
     }
 
     /**

@@ -26,16 +26,16 @@ public class UserController {
 
     @PostMapping("/user/insert1")
     public Integer insertUser1(@RequestBody User user) throws Exception{
-        return userService.insertUser_1(user);
+        return userService.insertUser1(user);
     }
 
     @PostMapping("/user/insert2")
     public Integer insertUser2(@RequestBody User user) {
-        return userService.insertUser_2(user);
+        return userService.insertUser2(user);
     }
 
     @PostMapping("/user/insert3")
     public Integer insertUser3(@RequestBody User user) {
-        return userService.insertUser_3(user);
+        return userService.insertUser3(user);
     }
 }

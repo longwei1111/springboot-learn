@@ -34,7 +34,7 @@ public class MessageListenerConfig {
         container.setMaxConcurrentConsumers(1);
         // rabbitmq默认是自动确认，这里改成手动确认
         container.setAcknowledgeMode(AcknowledgeMode.MANUAL);
-        container.setQueues(directRabbitConfig.TestDirectQueue());
+        container.setQueues(directRabbitConfig.testDirectQueue());
         container.setMessageListener(directReceiver);
         return container;
     }

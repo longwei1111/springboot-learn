@@ -2,6 +2,8 @@ package com.coolw.mybatisplus.controller;
 
 import cn.hutool.core.date.DatePattern;
 import cn.hutool.core.date.DateUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.coolw.mybatisplus.domain.excel.UserExcel;
 import com.coolw.mybatisplus.domain.req.UserReportReq;
@@ -11,8 +13,7 @@ import com.coolw.mybatisplus.mapper.UserMapper;
 import com.coolw.mybatisplus.service.UserService;
 import com.coolw.mybatisplus.util.ExcelUtils;
 import com.coolw.mybatisplus.util.PageResult;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -20,8 +21,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.URLEncoder;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * TODO
@@ -30,6 +30,7 @@ import java.util.List;
  * @date 2021/12/21 13:19
  * @since 1.0
  */
+@Slf4j
 @RequestMapping("/user")
 @RestController
 public class UserController {
@@ -38,15 +39,22 @@ public class UserController {
     private UserService userService;
     @Autowired
     private UserMapper userMapper;
-    
-    @Autowired
-    private SqlSessionFactory sqlSessionFactory;
 
     @PostMapping("/save")
     public boolean save(@RequestBody UserSaveReq req) {
         UserEntity user = new UserEntity();
         BeanUtils.copyProperties(req, user);
-        return userService.save(user);
+
+        Map<String, Object> extMap = new HashMap<>();
+        extMap.put("custId", "12312321");
+        user.setExtMap(extMap);
+
+        log.info("before user:{}", user);
+        List<UserEntity> list = new ArrayList<>();
+        list.add(user);
+        boolean result = userService.saveBatch(list);
+        log.info("after user-list:{}", list);
+        return result;
     }
 
     @GetMapping("/listAll")
@@ -61,15 +69,13 @@ public class UserController {
 
     @GetMapping("/{id}")
     public UserEntity getUserById(@PathVariable String id) {
-        
         // 一级缓存，默认开启，作用于同一个sqlSession中
         /*SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
         userMapper.selectById(id);
         userMapper.selectById(id);
-        userMapper.selectById(id);
-        */
-
+        userMapper.selectById(id);*/
+        
         // 二级缓存，需要手动开启，作用于同一个namespace中
         userMapper.selectById(id);
         userMapper.selectById(id);

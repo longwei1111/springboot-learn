@@ -13,9 +13,14 @@ import java.util.List;
 public interface UserDao {
 
     /**
-     * 新增用户
+     * 保存用户
      */
-    int insert(UserEntity user);
+    int save(UserEntity user);
+
+    /**
+     * 保存用户
+     */
+    int saveBatch(@Param("userList") List<UserEntity> userList);
 
     /**
      * 根据姓名获取用户信息
@@ -25,9 +30,9 @@ public interface UserDao {
     /**
      * 使用注解和xml结合。根据主键id和姓名获取用户信息
      */
-    @Select("select * from coo_user where id = #{id} and user_name = #{userName}")
+    @Select("select * from coo_user where mobile = #{mobile} and user_name = #{userName}")
     @ResultMap("Base_Result_Map")
-    UserEntity getUserByIdAndUserName(@Param("id") long id, @Param("userName") String userName);
+    UserEntity getUserByMobileAndName(@Param("mobile") String mobile, @Param("userName") String userName);
 
     /**
      * 使用注解，结果映射。根据主键id获取用户信息
@@ -37,11 +42,15 @@ public interface UserDao {
             @Result(column = "user_no", property = "userNo"),
             @Result(column = "user_name", property = "userName"),
             @Result(column = "password", property = "password"),
-            @Result(column = "mobile_no", property = "mobileNo"),
+            @Result(column = "mobile", property = "mobile"),
             @Result(column = "address", property = "address"),
             @Result(column = "user_status", property = "userStatus")
     })
     UserEntity getUserById(long id);
+    
+    List<UserEntity> listByIds(@Param("ids") List<Long> ids);
 
     int updateUserStatusByUserNo(@Param("userNo") String userNo, @Param("userStatus") String userStatus);
+    
+    List<UserEntity> listAll();
 }

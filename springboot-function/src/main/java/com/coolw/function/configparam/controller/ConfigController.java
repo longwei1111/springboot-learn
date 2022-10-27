@@ -1,6 +1,6 @@
 package com.coolw.function.configparam.controller;
 
-import com.coolw.common.api.Response;
+import com.coolw.common.api.BaseResponse;
 import com.coolw.function.configparam.service.MicroUrlService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -25,16 +25,16 @@ public class ConfigController {
     private String orderUrl;
 
     @RequestMapping("/test/config")
-    public Response testConfig() {
+    public BaseResponse testConfig() {
         log.info("=====获取的订单服务地址为：{}", orderUrl);
-        return new Response().success();
+        return BaseResponse.success();
     }
 
     @RequestMapping("/test/configs")
-    public Response testConfigs() {
+    public BaseResponse testConfigs() {
         log.info("=====获取的订单服务地址为：{}", microUrlService.getOrderUrl());
         log.info("=====获取的用户服务地址为：{}", microUrlService.getUserUrl());
         log.info("=====获取的购物车服务地址为：{}", microUrlService.getShoppingUrl());
-        return new Response().success();
+        return BaseResponse.success();
     }
 }

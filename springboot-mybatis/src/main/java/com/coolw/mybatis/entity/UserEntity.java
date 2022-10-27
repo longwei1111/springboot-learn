@@ -25,7 +25,7 @@ public class UserEntity extends BaseEntity {
     private String password;
 
     /** 手机号 */
-    private String mobileNo;
+    private String mobile;
 
     /** 地址 */
     private String address;

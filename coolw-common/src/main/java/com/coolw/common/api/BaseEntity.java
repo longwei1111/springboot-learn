@@ -17,6 +17,6 @@ public class BaseEntity extends BaseDomain {
     private static final long serialVersionUID = -8720665848011608399L;
 
     private Long id;
-    private Date crtTime;
-    private Date uptTime;
+    private Date createTime;
+    private Date updateTime;
 }

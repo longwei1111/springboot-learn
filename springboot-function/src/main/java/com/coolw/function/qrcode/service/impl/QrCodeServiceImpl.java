@@ -30,7 +30,7 @@ public class QrCodeServiceImpl implements QrCodeService {
         String payUrl = "http://" + address + "/pay?orderNo=" + orderNo;
 
         try {
-            QRCodeGeneratorUtils.generateQRCodeImage(payUrl, 350, 350, FILE_UPLOAD_PATH);
+            QRCodeGeneratorUtils.generateQrCodeImage(payUrl, 350, 350, FILE_UPLOAD_PATH);
         } catch (WriterException e) {
             throw new RuntimeException("生成二维码图片写入异常", e);
         } catch (IOException e) {

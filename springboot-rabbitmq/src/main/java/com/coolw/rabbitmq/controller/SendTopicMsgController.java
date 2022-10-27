@@ -19,13 +19,13 @@ public class SendTopicMsgController {
 
     @GetMapping("/topic/send")
     public String sendTopicMessage(){
-        topicProvider.sendTopicMessage_man();
+        topicProvider.sendTopicMessageMan();
         return "send ok";
     }
 
     @GetMapping("/topic/send1")
     public String sendTopicMessage1(){
-        topicProvider.sendTopicMessage_woman();
+        topicProvider.sendTopicMessageWoman();
         return "send1 ok";
     }
 }

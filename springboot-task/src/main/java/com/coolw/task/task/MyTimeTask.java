@@ -29,7 +29,7 @@ public class MyTimeTask {
      */
     @Async("taskScheduler")
     @Scheduled(fixedRate = 5000)
-    public void task_1() {
+    public void task1() {
         log.info("task_1 当前时间：{}", LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
     }
 
@@ -37,7 +37,7 @@ public class MyTimeTask {
      * 上一次执行完毕时间点之后10秒再执行
      */
     @Scheduled(fixedDelay = 10000)
-    public void task_2() {
+    public void task2() {
         log.info("task_2 当前时间：{}", LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
     }
 
@@ -45,7 +45,7 @@ public class MyTimeTask {
      * 第一次延迟1秒后执行，之后按fixedRate的规则每15秒执行一次
      */
     @Scheduled(initialDelay = 1000, fixedRate = 15000)
-    public void task_3() {
+    public void task3() {
         log.info("task_3 当前时间：{}", LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
     }
 
@@ -53,7 +53,7 @@ public class MyTimeTask {
      * 每20秒执行一次
      */
     @Scheduled(cron = "*/20 * * * * ?")
-    public void task_4() {
+    public void task4() {
         log.info("task_4 当前时间：{}", LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
     }
 }

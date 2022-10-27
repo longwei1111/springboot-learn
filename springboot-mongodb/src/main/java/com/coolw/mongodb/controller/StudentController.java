@@ -1,6 +1,6 @@
 package com.coolw.mongodb.controller;
 
-import com.coolw.common.api.Response;
+import com.coolw.common.api.BaseResponse;
 import com.coolw.mongodb.entity.Student;
 import com.coolw.mongodb.service.StudentService;
 import org.springframework.web.bind.annotation.*;
@@ -23,44 +23,44 @@ public class StudentController {
      * 新增学生信息
      */
     @PostMapping("/student/add")
-    public Response<Student> addStudent(@RequestBody Student student) {
+    public BaseResponse<Student> addStudent(@RequestBody Student student) {
         Student result = studentService.addStudent(student);
-        return new Response().success(result);
+        return BaseResponse.success(result);
     }
 
     /**
      * 根据id查询学生信息
      */
     @PostMapping("/student/query/{id}")
-    public Response<Student> findStudentById(@PathVariable long id) {
+    public BaseResponse<Student> findStudentById(@PathVariable long id) {
         Student student = studentService.findStudentById(id);
-        return new Response().success(student);
+        return BaseResponse.success(student);
     }
 
     /**
      * 获取学生信息列表
      */
     @GetMapping("/student/getAll")
-    public Response<List<Student>> findAllStudent() {
+    public BaseResponse<List<Student>> findAllStudent() {
         List<Student> studentList = studentService.findAllStudent();
-        return new Response().success(studentList);
+        return BaseResponse.success(studentList);
     }
 
     /**
      * 更新学生信息
      */
     @PostMapping("/student/update")
-    public Response<Student> updateStudent(Student student) {
+    public BaseResponse<Student> updateStudent(Student student) {
         Student result = studentService.updateStudent(student);
-        return new Response().success(result);
+        return BaseResponse.success(result);
     }
 
     /**
      * 根据id删除学生信息
      */
     @DeleteMapping("/student/delete/{id}")
-    public Response deleteStudentById(@PathVariable long id) {
+    public BaseResponse deleteStudentById(@PathVariable long id) {
         studentService.deleteStudentById(id);
-        return new Response().success();
+        return BaseResponse.success();
     }
 }

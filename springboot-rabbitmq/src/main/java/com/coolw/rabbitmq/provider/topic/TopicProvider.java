@@ -22,7 +22,7 @@ public class TopicProvider {
     @Resource
     private RabbitTemplate rabbitTemplate;
 
-    public void sendTopicMessage_man() {
+    public void sendTopicMessageMan() {
         String messageId = String.valueOf(UUID.randomUUID());
         String messageData = "message: man ";
         String createdTime = DateUtil.currentDateTime(DateUtil.YYYY_MM_DD_HH_MM_SS);
@@ -34,7 +34,7 @@ public class TopicProvider {
         log.info("TopicProvider man 发送消息成功");
     }
 
-    public void sendTopicMessage_woman() {
+    public void sendTopicMessageWoman() {
         String messageId = String.valueOf(UUID.randomUUID());
         String messageData = "message: woman is all ";
         String createdTime = DateUtil.currentDateTime(DateUtil.YYYY_MM_DD_HH_MM_SS);

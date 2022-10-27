@@ -46,12 +46,12 @@ public class ControllerLogHandler {
             operationName = operation.value();
         }
         // 判断是否包含io的入参
-        boolean isIOType = false;
+        boolean isIoType = false;
         Object[] args = jp.getArgs();
         if (Objects.nonNull(args) && args.length > 0) {
             for (Object arg : args) {
-                isIOType = arg instanceof InputStreamSource;
-                if (isIOType) {
+                isIoType = arg instanceof InputStreamSource;
+                if (isIoType) {
                     break;
                 }
             }
@@ -67,7 +67,7 @@ public class ControllerLogHandler {
                 .startTime(System.currentTimeMillis())
                 .build();
         THREAD_LOG.set(webLog);
-        log.info("流水号:[{}]处理开始,request:{}", webLog.getRequestId(), isIOType ? null : webLog);
+        log.info("流水号:[{}]处理开始,request:{}", webLog.getRequestId(), isIoType ? null : webLog);
     }
 
     @AfterReturning(value = "pointcut()", returning = "result")

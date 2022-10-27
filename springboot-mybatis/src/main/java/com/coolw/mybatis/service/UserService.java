@@ -1,6 +1,8 @@
 package com.coolw.mybatis.service;
 
+import com.coolw.mybatis.dto.req.UserSaveReq;
 import com.coolw.mybatis.entity.UserEntity;
+import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
@@ -11,13 +13,19 @@ import java.util.List;
  */
 public interface UserService {
 
-    int addUser(UserEntity user);
+    int save(UserSaveReq req);
+
+    int saveBatch(List<UserSaveReq> reqs);
 
     List<UserEntity> getUserListByUserName(String userName);
 
-    UserEntity getUserById(long id);
+    UserEntity getUserById(Long id);
 
-    UserEntity getUserByIdAndUserName(long id, String userName);
+    List<UserEntity> listByIds(List<Long> ids);
+
+    UserEntity getUserByMobileAndName(String mobile, String userName);
 
     int updateUserStatusByUserNo(String userNo, String userStatus);
+    
+    PageInfo<UserEntity> pageList(Integer pageNum, Integer pageSize);
 }
