@@ -17,6 +17,7 @@
         <module name="springboot-json" />
         <module name="springboot-interceptor" />
         <module name="springboot-redis" />
+        <module name="springboot-api-secret" />
         <module name="springboot-function" />
         <module name="springboot-rabbitmq" />
         <module name="springboot-task" />
@@ -32,6 +33,7 @@
       <module name="coolw-common" target="1.8" />
       <module name="springboot-actuator" target="1.8" />
       <module name="springboot-aop" target="1.8" />
+      <module name="springboot-api-secret" target="1.8" />
       <module name="springboot-cache" target="1.8" />
       <module name="springboot-druid" target="1.8" />
       <module name="springboot-function" target="1.8" />

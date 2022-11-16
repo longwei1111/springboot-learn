@@ -28,6 +28,7 @@
         <module>springboot-mybatisplus</module>
         <module>springboot-function</module>
         <module>springboot-kafka</module>
+        <module>springboot-api-secret</module>
     </modules>
 
     <properties>

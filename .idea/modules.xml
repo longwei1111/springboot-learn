@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/coolw-common/coolw-common.iml" filepath="$PROJECT_DIR$/coolw-common/coolw-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-actuator/springboot-actuator.iml" filepath="$PROJECT_DIR$/springboot-actuator/springboot-actuator.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-aop/springboot-aop.iml" filepath="$PROJECT_DIR$/springboot-aop/springboot-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-api-encrypt/springboot-api-secret.iml" filepath="$PROJECT_DIR$/springboot-api-encrypt/springboot-api-secret.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-cache/springboot-cache.iml" filepath="$PROJECT_DIR$/springboot-cache/springboot-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-druid/springboot-druid.iml" filepath="$PROJECT_DIR$/springboot-druid/springboot-druid.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-function/springboot-function.iml" filepath="$PROJECT_DIR$/springboot-function/springboot-function.iml" />
