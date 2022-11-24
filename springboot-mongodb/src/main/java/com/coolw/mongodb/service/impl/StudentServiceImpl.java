@@ -1,6 +1,6 @@
 package com.coolw.mongodb.service.impl;
 
-import com.coolw.mongodb.dao.StudentRepository;
+import com.coolw.mongodb.repository.StudentRepository;
 import com.coolw.mongodb.entity.Student;
 import com.coolw.mongodb.service.StudentService;
 import lombok.extern.slf4j.Slf4j;

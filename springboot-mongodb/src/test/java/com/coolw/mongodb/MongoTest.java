@@ -1,13 +1,13 @@
 package com.coolw.mongodb;
 
-import com.coolw.mongodb.dao.Che300PriceResultRepository;
+import cn.hutool.core.util.IdUtil;
+import com.coolw.mongodb.repository.Che300PriceResultRepository;
 import com.coolw.mongodb.entity.Che300PriceResultMongoEntity;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
 import java.util.Date;
-import java.util.UUID;
 
 /**
  * @Description TODO
@@ -23,7 +23,7 @@ public class MongoTest {
     @Test
     public void testMongo() {
         Che300PriceResultMongoEntity mongoEntity = new Che300PriceResultMongoEntity();
-        mongoEntity.setRequestNo(UUID.randomUUID().toString());
+        mongoEntity.setRequestNo(IdUtil.fastSimpleUUID());
         mongoEntity.setVin("8888888");
         mongoEntity.setCreateTime(new Date());
         mongoEntity.setUpdateTime(new Date());

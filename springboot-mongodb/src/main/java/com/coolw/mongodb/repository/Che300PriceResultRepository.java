@@ -1,4 +1,4 @@
-package com.coolw.mongodb.dao;
+package com.coolw.mongodb.repository;
 
 import com.coolw.mongodb.entity.Che300PriceResultMongoEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;

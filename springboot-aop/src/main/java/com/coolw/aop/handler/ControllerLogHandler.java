@@ -1,5 +1,6 @@
 package com.coolw.aop.handler;
 
+import cn.hutool.core.util.IdUtil;
 import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +15,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.util.Objects;
-import java.util.UUID;
 
 /**
  * 日志切面
@@ -36,7 +36,7 @@ public class ControllerLogHandler {
 
     @Before("pointcut()")
     public void before(JoinPoint jp) {
-        String uuid = UUID.randomUUID().toString().replace("-", "");
+        String uuid = IdUtil.fastSimpleUUID();
         MethodSignature methodSignature = (MethodSignature) jp.getSignature();
         Method method = methodSignature.getMethod();
         String methodName = jp.getTarget().getClass().getName() + "#" + method.getName();
