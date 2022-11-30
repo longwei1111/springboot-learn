@@ -37,10 +37,10 @@ public class DirectReceiver implements ChannelAwareMessageListener {
             log.info("===消息手动确认：messageId={},messageData={},createdTime={}", messageId, messageData, createdTime);
 
             channel.basicAck(deliveryTag, false);
-//            channel.basicAck(deliveryTag, true); // 为true会被重新放回队列
         } catch (Exception e) {
+            // 为true会被重新放回队列
             channel.basicReject(deliveryTag, false);
-            log.info("message={},消息处理异常", messageId);
+            log.error("message={},消息处理异常", messageId, e);
         }
     }
 

@@ -1,7 +1,7 @@
 ##  springboot 接口数据加解密
 
 ### AES
-![img.png](aes.png)
+![img.png](src/main/resources/img/aes.png)
 
 - 加密和解密注解标识
 > @DecryptRequest：对请求数据进行解密  
@@ -205,11 +205,11 @@ public class UserController {
 ```
 
 加密测试
-![img_2.png](test2.png)
+![img_2.png](src/main/resources/img/test2.png)
 
 解密测试
 
-![img_1.png](test1.png)
+![img_1.png](src/main/resources/img/test1.png)
 
 ### RSA
-![img.png](rsa.png)
+![img.png](src/main/resources/img/rsa.png)

@@ -1,5 +1,6 @@
 package com.coolw.rabbitmq.provider.topic;
 
+import cn.hutool.core.util.IdUtil;
 import com.coolw.rabbitmq.util.DateUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -8,7 +9,6 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 /**
  * @Description
@@ -23,7 +23,7 @@ public class TopicProvider {
     private RabbitTemplate rabbitTemplate;
 
     public void sendTopicMessageMan() {
-        String messageId = String.valueOf(UUID.randomUUID());
+        String messageId = IdUtil.fastSimpleUUID();
         String messageData = "message: man ";
         String createdTime = DateUtil.currentDateTime(DateUtil.YYYY_MM_DD_HH_MM_SS);
         Map<String, Object> manMap = new HashMap<>();
@@ -35,7 +35,7 @@ public class TopicProvider {
     }
 
     public void sendTopicMessageWoman() {
-        String messageId = String.valueOf(UUID.randomUUID());
+        String messageId = IdUtil.fastSimpleUUID();
         String messageData = "message: woman is all ";
         String createdTime = DateUtil.currentDateTime(DateUtil.YYYY_MM_DD_HH_MM_SS);
         Map<String, Object> womanMap = new HashMap<>();

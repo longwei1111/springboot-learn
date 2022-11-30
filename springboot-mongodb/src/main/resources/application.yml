@@ -1,0 +1,20 @@
+# 服务端口号
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      # 第一种方式
+      #uri: mongodb://localhost:27017/test
+      #第二种方式
+      host: localhost
+      port: 27017
+      database: test
+      #username:
+      #password: 
+
+
+
+
+

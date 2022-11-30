@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+    deserialization:
+      fail-on-unknown-properties: true
+    #date-format: yyyy-mm-dd HH:mm:ss
+    #time-zone: GTM+8

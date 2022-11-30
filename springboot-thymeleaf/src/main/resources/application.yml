@@ -1,2 +1,4 @@
 # Thymeleaf 默认是开启页面缓存的，此处设置关闭缓存
-spring.thymeleaf.cache=false
+spring:
+  thymeleaf:
+    cache: false

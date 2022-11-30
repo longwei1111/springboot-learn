@@ -1,0 +1,7 @@
+# 服务端口号
+server:
+  port: 8020
+
+# 日志文件配置
+logging:
+  config: classpath:log4j2-dev.xml

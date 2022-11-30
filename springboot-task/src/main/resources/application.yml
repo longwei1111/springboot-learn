@@ -1,0 +1,45 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: SPRINGBOOT-TASK
+  task:
+    execution:
+      pool:
+        # 核心线程数10：线程池初始化时默认是没有线程的，当任务来临时才开始创建线程去执行任
+        core-size: 10
+        # 最大线程数20：线程池最大的线程数，只有在缓冲队列满了之后才会申请超过核心线程数的线程
+        max-size: 20
+        # 缓冲队列100：用来缓冲执行任务的队列
+        queue-capacity: 100
+        # 允许线程的空闲时间60秒：当超过了核心线程出之外的线程在空闲时间到达之后会被销毁
+        keep-alive: 60
+      # 线程池名的前缀：设置好了之后可以方便定位处理任务所在的线程池
+      thread-name-prefix: asyncTask1-
+
+###### 线程池配置 ######
+# 默认线程池配置
+default:
+  pool:
+    corePoolSize: 2
+    maxPoolSize: 5
+    queueSize: 10
+    keepAlive: 60
+    namePrefix: default-task
+# 订单线程池配置
+order:
+  pool:
+    corePoolSize: 10
+    maxPoolSize: 20
+    queueSize: 100
+    keepAlive: 60
+    namePrefix: oder-task
+# 短信线程池配置
+sms:
+  pool:
+    corePoolSize: 10
+    maxPoolSize: 20
+    queueSize: 100
+    keepAlive: 60
+    namePrefix: sms-task

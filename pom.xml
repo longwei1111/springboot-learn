@@ -29,6 +29,7 @@
         <module>springboot-function</module>
         <module>springboot-kafka</module>
         <module>springboot-api-secret</module>
+        <module>springboot-rocketmq</module>
     </modules>
 
     <properties>

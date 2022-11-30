@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: SPRINGBOOT-RABBITMQ
+  # rabbitmq配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    # 确认消息已发送到交换机(exchange)
+    publisher-confirms: true
+    # 确认消息已发送到队列(queue)
+    publisher-returns: true

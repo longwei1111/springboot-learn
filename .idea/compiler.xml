@@ -22,6 +22,7 @@
         <module name="springboot-rabbitmq" />
         <module name="springboot-task" />
         <module name="springboot-mybatis" />
+        <module name="springboot-rocketmq" />
         <module name="coolw-common" />
         <module name="springboot-cache" />
         <module name="springboot-log4j2" />
@@ -48,6 +49,7 @@
       <module name="springboot-mybatisplus" target="1.8" />
       <module name="springboot-rabbitmq" target="1.8" />
       <module name="springboot-redis" target="1.8" />
+      <module name="springboot-rocketmq" target="1.8" />
       <module name="springboot-task" target="1.8" />
       <module name="springboot-thymeleaf" target="1.8" />
       <module name="springboot-transaction" target="1.8" />

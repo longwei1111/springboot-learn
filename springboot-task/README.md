@@ -11,7 +11,7 @@
 ```
 使用@Async时，如果不指定自定义的线程，@Async有默认的线程池，线程池参数：
 ```
-![img.png](img.png)
+![img.png](src/main/resources/img/img.png)
 可见，队列数和最大线程数的大小为`Integet.MAX_VALUE`，可以修改其配置
 ```yml
 spring:
