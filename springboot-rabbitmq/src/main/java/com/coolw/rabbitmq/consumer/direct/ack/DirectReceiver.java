@@ -19,7 +19,7 @@ import java.util.Map;
 @Component
 @RabbitListener(queues = "testDirectQueue")
 public class DirectReceiver implements ChannelAwareMessageListener {
-
+    
     @Override
     public void onMessage(Message message, Channel channel) throws Exception {
         long deliveryTag = message.getMessageProperties().getDeliveryTag();
@@ -30,7 +30,7 @@ public class DirectReceiver implements ChannelAwareMessageListener {
             // message中,单引号包含的内容数据就是map消息数据
             String[] msgArray = msg.split("'");
             // 数据转换
-            Map<String, String> msgMap = mapStringToMap(msgArray[1].trim());
+            Map<String, String> msgMap = mapStringToMap(msgArray[1]);
             messageId = msgMap.get("messageId");
             String messageData = msgMap.get("messageData");
             String createdTime = msgMap.get("createdTime");
@@ -40,7 +40,7 @@ public class DirectReceiver implements ChannelAwareMessageListener {
         } catch (Exception e) {
             // 为true会被重新放回队列
             channel.basicReject(deliveryTag, false);
-            log.error("message={},消息处理异常", messageId, e);
+            log.error("messageId={},消息处理异常", messageId, e);
         }
     }
 
@@ -52,7 +52,7 @@ public class DirectReceiver implements ChannelAwareMessageListener {
         String[] strs = str.split(",");
         Map<String, String> map = new HashMap<String, String>();
         for (String string : strs) {
-            String key = string.split("=")[0].trim();
+            String key = string.split("=")[0];
             String value = string.split("=")[1];
             map.put(key, value);
         }

@@ -34,9 +34,14 @@ public class KafkaListener {
             }
 
             @Override
+            public void onError(ProducerRecord<String, Object> producerRecord, RecordMetadata recordMetadata, Exception exception) {
+                log.error("error==>message:{}", producerRecord.value(), exception);
+            }
+            
+            /*@Override
             public void onError(ProducerRecord<String, Object> producerRecord, Exception e) {
                 log.error("error==>message:{}", producerRecord.value(), e);
-            }
+            }*/
         });
     }
 }

@@ -1,11 +1,12 @@
 package com.coolw.rabbitmq.consumer.direct;
 
+import com.coolw.rabbitmq.consumer.AbstractConsumer;
+import com.coolw.rabbitmq.dto.MessageDTO;
+import com.rabbitmq.client.Channel;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
-
-import java.util.Map;
 
 /**
  * @Description
@@ -14,13 +15,17 @@ import java.util.Map;
  */
 @Slf4j
 @Component
-@RabbitListener(queues = "testDirectQueue")
-public class DirectConsumer {
+public class DirectConsumer extends AbstractConsumer<String> {
 
-    /** 监听的队列名称 testDirectQueue */
-
-    @RabbitHandler
-    public void process(Map messageMap) {
-        log.info("DirectReceiver接收到消息：{}", messageMap.toString());
+    @Override
+    @RabbitListener(queues = "testDirectQueue")
+    public void process(MessageDTO<String> messageDTO, Channel channel, Message message) {
+        log.info("DirectReceiver接收到消息:{}", messageDTO);
+        try {
+            ack(messageDTO, channel, message);
+        } catch (Exception e) {
+            log.error("DirectReceiver消费者处理消息异常messageId:{}", messageDTO.getMessageId(), e);
+            nack(messageDTO, channel, message);
+        }
     }
 }

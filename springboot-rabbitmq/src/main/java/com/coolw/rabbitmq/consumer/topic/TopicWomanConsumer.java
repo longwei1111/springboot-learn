@@ -1,11 +1,12 @@
 package com.coolw.rabbitmq.consumer.topic;
 
+import com.coolw.rabbitmq.consumer.AbstractConsumer;
+import com.coolw.rabbitmq.dto.MessageDTO;
+import com.rabbitmq.client.Channel;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
-
-import java.util.Map;
 
 /**
  * @Description
@@ -14,11 +15,17 @@ import java.util.Map;
  */
 @Slf4j
 @Component
-@RabbitListener(queues = "topic.woman")
-public class TopicWomanConsumer {
+public class TopicWomanConsumer extends AbstractConsumer<String> {
 
-    @RabbitHandler
-    public void process(Map messageData) {
-        log.info("TopicWomanConsumer接收到消息：{}", messageData.toString());
+    @Override
+    @RabbitListener(queues = "topic.woman")
+    public void process(MessageDTO<String> messageDTO, Channel channel, Message message) {
+        log.info("TopicWomanConsumer接收到消息:{}", messageDTO);
+        try {
+            ack(messageDTO, channel, message);
+        } catch (Exception e) {
+            log.error("TopicWomanConsumer消费者处理消息异常,messageId:{}", messageDTO.getMessageId(), e);
+            nack(messageDTO, channel, message);
+        }
     }
 }

@@ -14,3 +14,15 @@ spring:
     publisher-confirms: true
     # 确认消息已发送到队列(queue)
     publisher-returns: true
+    listener:
+      direct:
+        retry:
+          enabled: true
+          # 最大重试次数
+          max-attempts: 3
+          # 最大重试间隔时间ms
+          max-interval: 10000
+          # 初始重试间隔时间ms
+          initial-interval: 2000
+          # 重试间隔时间乘子,间隔时间*乘子=下一次的间隔时间,最大不能超过设置的最大间隔时间
+          multiplier: 2

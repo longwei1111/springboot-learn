@@ -1,0 +1,8 @@
+server:
+  port: 8080
+  
+rocketmq:
+  name-server: 192.168.110.66:9876
+  producer:
+    group: my-group
+    send-message-timeout: 3000 
