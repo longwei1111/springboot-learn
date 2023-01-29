@@ -2,7 +2,9 @@ server:
   port: 8080
   
 rocketmq:
+  # NameServer地址，有多个用英文分号";"隔开
   name-server: 192.168.110.66:9876
   producer:
-    group: my-group
-    send-message-timeout: 3000 
+    group: my-producer-group
+    # 消息发送超时时间ms
+    send-message-timeout: 30000

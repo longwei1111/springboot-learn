@@ -10,6 +10,7 @@
         <module name="springboot-kafka" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-mybatisplus" />
+        <module name="mq-producer" />
         <module name="springboot-transaction" />
         <module name="springboot-aop" />
         <module name="springboot-actuator" />
@@ -32,6 +33,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="coolw-common" target="1.8" />
+      <module name="mq-producer" target="1.8" />
       <module name="springboot-actuator" target="1.8" />
       <module name="springboot-aop" target="1.8" />
       <module name="springboot-api-secret" target="1.8" />

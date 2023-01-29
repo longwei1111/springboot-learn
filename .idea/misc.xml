@@ -15,6 +15,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/mq-producer/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-email/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-exception/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mvc/pom.xml" />

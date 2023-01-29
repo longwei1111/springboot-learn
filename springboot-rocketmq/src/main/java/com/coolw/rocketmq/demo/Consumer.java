@@ -9,7 +9,7 @@ import org.apache.rocketmq.common.message.MessageExt;
 import java.util.List;
 
 /**
- * TODO
+ * MQ示例:消息消费者
  *
  * @author coolw
  * @date 2022/12/2 16:18
@@ -18,10 +18,10 @@ import java.util.List;
 public class Consumer {
 
     public static void main(String[] args) throws Exception {
-        // 创建MQ消费者实例,并指定名称
-        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("my-group");
+        // 创建MQ消费者实例,指定消息消费者组名称
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("my_test_group");
         consumer.setNamesrvAddr("192.168.110.66:9876");
-        // 订阅消费主题
+        // 订阅指定topic下的消息(*代表所有的tag)
         consumer.subscribe("TopicTest", "*");
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
